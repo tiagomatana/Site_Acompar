@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      
-    
+
+
     <title>ACOMPAR</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 
@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="assets/css/main.css">
         <link rel="shortcut  icon" href="images/icon.png" type="image/ico">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-      
+
        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
     <link rel="stylesheet" href="style.css">
-    
+
   </head>
-  <body class="homepage" ng-app="dialogDemo1">
-        
+  <body class="homepage" ng-app="dialogDemo1" ng-cloak>
+
     <div id="page-wrapper" ng-controller="AppCtrl">
 
       <!-- Header -->
@@ -25,26 +25,26 @@
           <div id="header">
 
             <!-- Logo -->
-                        
+
               <img src="images/logo.svg" width="200" style="width:40%;height:auto;"/>
 
             <!-- Nav -->
                         <nav id="nav" style="text-align:center;">
-                                
+
                 <ul>
-                  
+
                   <li class="current"><a href="#intro">Quem somos?</a></li>
-                  <li class="current"><a href="#atendimentos">Atendimento</a></li>
+                  <li class="current"><a href="#atendimentos">Atendimentos</a></li>
                   <li class="current"><a href="#depoimentos">Depoimentos</a></li>
                                     <li class="current"><a href="#eventos">Eventos</a></li>
                   <li class="current"><a href="#contato">Contato</a></li>
                             </ul>
                         </nav>
-                        
+
               <!--<nav id="nav">
-                                
+
                 <ul>
-                  
+
                   <li class="current"><a href="#intro">Quem somos</a></li>
                   <li class="current"><a href="#atendimentos">Atendimento</a></li>
                   <li class="current"><a href="#depoimentos">Depoimentos</a></li>
@@ -80,7 +80,7 @@
                                 <header>
                                     <h2></h2>
                                 </header>
-                
+
               </section>
 
             <!-- Intro -->
@@ -92,7 +92,7 @@
                 <div class="row">
                   <div class="4u 12u(mobile)">
                     <section class="first">
-                      
+
                       <header>
                         <h2>Miss&atilde;o</h2>
                       </header>
@@ -101,7 +101,7 @@
                   </div>
                   <div class="4u 12u(mobile)">
                     <section class="middle">
-                      
+
                       <header>
                         <h2>Vis&atilde;o</h2>
                       </header>
@@ -110,7 +110,7 @@
                   </div>
                   <div class="4u 12u(mobile)">
                     <section class="last">
-                      
+
                       <header>
                         <h2>Valores</h2>
                       </header>
@@ -119,7 +119,7 @@
                   </div>
                 </div>
                 <footer style="text-align:justify">
-                                    
+
                                     <h2>Proposta Pedag&oacute;gica</h2>
                                     <br>
                                     <p> <img src="images/logo_novo.svg" width="200" style="float:left;height: auto;width: 30%;" alt="" />A ACOMPAR baseia sua proposta pedag&oacute;gica numa postura s&oacute;cio-interacionista, respaldando-se em princ&iacute;pios de coopera&ccedil;&atilde;o, solidariedade e respeito &agrave;s diferen&ccedil;as. Atrav&eacute;s de um ambiente desafiador, pretende favorecer o desenvolvimento integral do indiv&iacute;duo, considerando-o em suas dimens&otilde;es f&iacute;sica, afetiva, cognitiva e social. </p>
@@ -133,8 +133,13 @@
                   </ul>-->
                 </footer>
               </section>
+              <section id="historia" class="container">
+                <header class="major">
+                  <h2> Hist&oacute;ria da Institui&ccedil;&atilde;o </h2>
+                </header>
+                <div ng-include="'timeline.html'"></div>
+              </section>
 
-          
         </div>
 
       <!-- Main -->
@@ -197,10 +202,10 @@
                     </section>
                     <section>
                     <header class="major">
-                      <h2>SCFV e Programa de Aprendizagem</h2>
-                                             
+                      <h2>Desenvolvimento Comunit�rio</h2>
+
                     </header>
-                                    
+
                     <div class="row">
                       <div class="4u 12u(mobile)">
                        <section class="box">
@@ -213,7 +218,7 @@
                             E-mail: nucleo4@acompar.org</p>
                             <footer>
                             <a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
-                            </footer> 
+                            </footer>
 
                         </section>
                       </div>
@@ -371,7 +376,7 @@
                                     </form>
                 </section>
               </div>
-              
+
               <div class="5u 12u(mobile)">
                 <section style="padding-top: 20px">
                   <header style="text-align: center">
@@ -380,8 +385,8 @@
                   <ul class="social">
                     <li><a class="icon fa-facebook" href="http://facebook.com/Acompar"><span class="label">Facebook</span></a></li>
                     <li><a class="icon fa-instagram" href="#"><span class="label">Twitter</span></a></li>
-                    
-                    
+
+
                   </ul>
                                     <header>
                     <h2>Links &Uacute;teis</h2>
@@ -436,7 +441,7 @@
       <script src="assets/js/util.js"></script>
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
-      
+
 
     <!-- Scripts -->
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
@@ -447,9 +452,9 @@
   <!-- Angular Material Library -->
   <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 <script type="text/javascript" src="dialogDemo1.module.js"></script>
-      
-      
-     
+
+
+
 
   </body>
 </html>
