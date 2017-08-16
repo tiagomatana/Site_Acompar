@@ -11,35 +11,63 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="shortcut  icon" href="images/icon.png" type="image/ico">
   <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body class="homepage" ng-app="dialogDemo1" ng-cloak>
-
+<nav class="navbar navbar-default" id="nav" style="margin-bottom: 0;padding-bottom: 0;">
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"> </a>
+    </div>
+    <ul class="nav navbar-nav">
+       <li class="current"><a href="#intro" style="color:#3495CF">Instituição</a></li>
+            <li class="current"><a href="#parceiros" style="color:#3495CF">Parceiros</a></li>
+            <li class="current"><a href="#eventos" style="color:#3495CF">Eventos</a></li>
+            <li class="current"><a href="#pa" style="color:#3495CF">Trabalhe Conosco</a></li>
+    </ul>
+      <span style="float: right;margin:15px;margin-right: 60px;">contato@acompar.org | (51) 3367-2986</span>
+  </div>
+    
+</nav>
   <div id="page-wrapper" ng-controller="AppCtrl">
 
     <!-- Header -->
-    <div id="header-wrapper">
-      <div id="header">
+    <div id="header-wrapper" style="text-align: center;padding: 0;margin: 0;">
+      <div id="header" style="text-align: center;padding: 0;margin: 0;">
+          
 
+            
+   <img src="images/logo.svg" width="450" alt="" style="padding: 0;margin: 0;"/>
+  
+      
+    
+    </div>
+<!--
+          <nav >
+          <ul >
+                        
+            <li class="current"><a href="#intro" style="color:#3495CF">Instituição</a></li>
+            <li class="current"><a href="#parceiros" style="color:#3495CF">Parceiros</a></li>
+            <li class="current"><a href="#eventos" style="color:#3495CF">Eventos</a></li>
+            <li class="current"><a href="#eventos" style="color:#3495CF">Seja Parceiro</a></li>
+           
+        
+          </ul>
+   
+        </nav>
+-->
+           
         <!-- Logo -->
 
-        <img src="images/logo.svg" width="200" style="width:40%;height:auto;"/>
+        
 
         <!-- Nav -->
-        <nav id="nav" style="text-align:center;">
-
-          <ul>
-
-            <li class="current"><a href="#intro">Quem somos?</a></li>
-            <li class="current"><a href="#atendimentos">Atendimentos</a></li>
-            <li class="current"><a href="#depoimentos">Depoimentos</a></li>
-            <li class="current"><a href="#eventos">Eventos</a></li>
-            <li class="current"><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
+        
 
         <!--<nav id="nav">
 
@@ -51,7 +79,7 @@
         <li class="current"><a href="#eventos">Eventos</a></li>
         <li class="current"><a href="#contato">Contato</a></li>
         <li>
-        <a href="#">Dropdown</a>
+        <a href="#">Instituicional</a>
         <ul>
         <li><a href="#">Lorem ipsum dolor</a></li>
         <li><a href="#">Magna phasellus</a></li>
@@ -118,20 +146,26 @@
       </section>
     </div>
   </div>
-  <footer style="text-align:justify">
-
-    <h2>Proposta Pedag&oacute;gica</h2>
-    <br>
-    <p> <img src="images/logo_novo.svg" width="180" style="float:left;height: auto;width: 30%;" alt="" />A ACOMPAR baseia sua proposta pedag&oacute;gica numa postura s&oacute;cio-interacionista, respaldando-se em princ&iacute;pios de coopera&ccedil;&atilde;o, solidariedade e respeito &agrave;s diferen&ccedil;as. Atrav&eacute;s de um ambiente desafiador, pretende favorecer o desenvolvimento integral do indiv&iacute;duo, considerando-o em suas dimens&otilde;es f&iacute;sica, afetiva, cognitiva e social. </p>
-    <br>
-    <p>Dentro desta concep&ccedil;&atilde;o, visa contribuir para a constru&ccedil;&atilde;o da auto-estima e da identidade individual e de grupo, bem como, para a forma&ccedil;&atilde;o de sujeitos aut&ocirc;nomos e cr&iacute;ticos, capazes do exerc&iacute;cio pleno da cidadania. </p>
-    <br>
-    <p>Com atividades propostas no sentido de estimular a criatividade e capacidade de resolu&ccedil;&atilde;o de situa&ccedil;&otilde;es-problemas, objetiva qualificar as situa&ccedil;&otilde;es de intera&ccedil;&atilde;o dos sujeitos com o meio e dos sujeitos entre si, envolvendo ativamente educadores, educandos e familiares. </p>
-    <!--<ul class="actions">
-    <li><a href="#" class="button big">Get Started</a></li>
-    <li><a href="#" class="button alt big">Learn More</a></li>
-  </ul>-->
-</footer>
+    
+  <section class="container">
+      
+      <header class="major"><h2>Proposta Pedag&oacute;gica</h2></header>
+    <div class="row">
+    <div class="2u 12u(mobile)">
+         <section class="middle">
+            <img src="images/logo_novo.svg" width="180" alt="" />
+        </section>
+      </div>
+      <div class="10u 12u(mobile)">
+         <section class="last" style="text-align: justify">
+            <p> A ACOMPAR baseia sua proposta pedag&oacute;gica numa postura s&oacute;cio-interacionista, respaldando-se em princ&iacute;pios de coopera&ccedil;&atilde;o, solidariedade e respeito &agrave;s diferen&ccedil;as. Atrav&eacute;s de um ambiente desafiador, pretende favorecer o desenvolvimento integral do indiv&iacute;duo, considerando-o em suas dimens&otilde;es f&iacute;sica, afetiva, cognitiva e social. </p>
+            <p>Dentro desta concep&ccedil;&atilde;o, visa contribuir para a constru&ccedil;&atilde;o da auto-estima e da identidade individual e de grupo, bem como, para a forma&ccedil;&atilde;o de sujeitos aut&ocirc;nomos e cr&iacute;ticos, capazes do exerc&iacute;cio pleno da cidadania. </p>
+            <p>Com atividades propostas no sentido de estimular a criatividade e capacidade de resolu&ccedil;&atilde;o de situa&ccedil;&otilde;es-problemas, objetiva qualificar as situa&ccedil;&otilde;es de intera&ccedil;&atilde;o dos sujeitos com o meio e dos sujeitos entre si, envolvendo ativamente educadores, educandos e familiares. </p>
+          </section>
+      </div>
+ </div>
+</section>
+        
 </section>
 <section id="historia" class="container">
   <header class="major">
@@ -161,7 +195,7 @@
                 <header>
                   <h3>N&uacute;cleo II</h3>
                 </header>
-                <p>Av. Caldeia, 250.<br>
+                <p>Av. Caldeia, 210.<br>
                   (51)3367-2722  / (51)98608-6399 <br>
                   E-mail: nucleo2@acompar.org</p>
                   <footer>
@@ -308,7 +342,7 @@
 
       <!-- Footer -->
       <div id="footer-wrapper">
-        <section id="eventos" class="container">
+        <section id="/eventos" class="container">
           <div class="row">
             <div class="6u 12u(mobile)">
               <section>

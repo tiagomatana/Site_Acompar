@@ -1705,7 +1705,8 @@
 		 -o-background-size: cover;
 			background-size: cover;
 	padding: 0;
-        height: 25em;
+        height: 45em;
+        width: 100%;
         margin:0;
         
 	}
@@ -1972,11 +1973,13 @@
 
 			#nav > ul {
 				margin: 0;
+                text-align:center; padding: 15px;border-bottom: 1px dotted #000;
 			}
 
 				#nav > ul > li {
 					display: inline-block;
 					font-style: italic;
+                    font-size: 14px;
 					margin: 0 0.35em 0 0.35em;
 				}
 
@@ -2003,7 +2006,7 @@
 					#nav > ul > li.current > a {
 						background: #3495CF;
 						color: #fff !important;
-						font-weight: 700;
+						font-weight: 40;
 					}
 
 			.dropotron {
@@ -2057,8 +2060,8 @@
 
 			#banner {
                 
-				padding: 1em 0;
-				margin: 1em 0 0 0;
+				padding: 0 0;
+				margin: 0 0 0 0;
 			}
 
 				#banner header {
@@ -2221,8 +2224,8 @@
 		/* Banner */
 
 			#banner {
-				padding: 1em 0;
-				margin: 1em 0 0 0;
+				/*padding: 1em 0;
+				margin: 1em 0 0 0;*/
 			}
 
 		/* Intro */
@@ -2454,7 +2457,7 @@
 				width: 225px;
 				z-index: 10002;
 				color: #858484;
-				background-image: url("images/bg.png");
+				background: #3495CF;
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 			}
 
