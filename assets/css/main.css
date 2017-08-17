@@ -1973,7 +1973,7 @@
 
 			#nav > ul {
 				margin: 0;
-                text-align:center; padding: 15px;border-bottom: 1px dotted #000;
+               
 			}
 
 				#nav > ul > li {
@@ -2004,8 +2004,8 @@
 					}
 
 					#nav > ul > li.current > a {
-						background: #3495CF;
-						color: #fff !important;
+						background: transparent;
+						color: #3495CF !important;
 						font-weight: 40;
 					}
 
@@ -2587,8 +2587,8 @@
 		/* Banner */
 
 			#banner {
-				margin: 1em 0 1em 0 !important;
-				padding: 3em 0;
+				margin: 0 0 1em 0 !important;
+				padding: 0 0;
 			}
 
 				#banner header {

@@ -11,462 +11,409 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="shortcut  icon" href="images/icon.png" type="image/ico">
   <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body class="homepage" ng-app="dialogDemo1" ng-cloak>
-<nav class="navbar navbar-default" id="nav" style="margin-bottom: 0;padding-bottom: 0;">
-  <div class="container-fluid" >
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/"> </a>
-    </div>
-    <ul class="nav navbar-nav">
-       <li class="current"><a href="#intro" style="color:#3495CF">Instituição</a></li>
-            <li class="current"><a href="#parceiros" style="color:#3495CF">Parceiros</a></li>
-            <li class="current"><a href="#eventos" style="color:#3495CF">Eventos</a></li>
-            <li class="current"><a href="#pa" style="color:#3495CF">Trabalhe Conosco</a></li>
-    </ul>
-      <span style="float: right;margin:15px;margin-right: 60px;">contato@acompar.org | (51) 3367-2986</span>
-  </div>
-    
-</nav>
+<md-content>
+
+    <md-toolbar style="background-color:#fff;color:#000;height:3.5em;">
+      <div class="md-toolbar-tools" layout-align="start center" layout="row" layout-xs="column">
+       <img src="images/logo.svg"  alt="" style="padding: 0;margin: 0;width:8em;float:left;"/>
+
+       <span flex></span>
+			<nav id="nav">
+			<ul>
+				<li class="current"><a href="#intro">Institui&ccedil;&atilde;o</a></li>
+				<li class="current"><a href="#parceiros" style="color:#3495CF">Parceiros</a></li>
+				<li class="current"><a href="#eventos" style="color:#3495CF">Eventos</a></li>
+				<li class="current"><a href="#eventos" style="color:#3495CF">Seja Parceiro</a></li>
+            </ul>
+        </nav>
+			<span flex></span>
+			<div hide show-gt-sm flex>
+				<span class="md-caption">contato@acompar.org | (51)3367-2986</span>
+
+
+
+			</div>
+
+      </div>
+    </md-toolbar>
+</md-content>
+
+
+
   <div id="page-wrapper" ng-controller="AppCtrl">
 
     <!-- Header -->
     <div id="header-wrapper" style="text-align: center;padding: 0;margin: 0;">
-      <div id="header" style="text-align: center;padding: 0;margin: 0;">
-          
+		<!-- <div id="header" style="text-align: center;padding: 0;margin: 0;"> -->
+			<!-- <img src="images/logo.svg"  alt="" style="padding: 0;margin: 0;width:80%;height:auto;"/> -->
+		<!-- </div> -->
 
-            
-   <img src="images/logo.svg" width="450" alt="" style="padding: 0;margin: 0;"/>
-  
-      
-    
-    </div>
-<!--
-          <nav >
-          <ul >
-                        
-            <li class="current"><a href="#intro" style="color:#3495CF">Instituição</a></li>
-            <li class="current"><a href="#parceiros" style="color:#3495CF">Parceiros</a></li>
-            <li class="current"><a href="#eventos" style="color:#3495CF">Eventos</a></li>
-            <li class="current"><a href="#eventos" style="color:#3495CF">Seja Parceiro</a></li>
-           
-        
-          </ul>
-   
-        </nav>
--->
-           
-        <!-- Logo -->
 
-        
 
-        <!-- Nav -->
-        
 
-        <!--<nav id="nav">
+		<!-- Banner -->
+		<section id="banner">
+		  <header>
+			<h2></h2>
+		  </header>
 
-        <ul>
+		</section>
 
-        <li class="current"><a href="#intro">Quem somos</a></li>
-        <li class="current"><a href="#atendimentos">Atendimento</a></li>
-        <li class="current"><a href="#depoimentos">Depoimentos</a></li>
-        <li class="current"><a href="#eventos">Eventos</a></li>
-        <li class="current"><a href="#contato">Contato</a></li>
-        <li>
-        <a href="#">Instituicional</a>
-        <ul>
-        <li><a href="#">Lorem ipsum dolor</a></li>
-        <li><a href="#">Magna phasellus</a></li>
-        <li><a href="#">Etiam dolore nisl</a></li>
-        <li>
-        <a href="#">Phasellus consequat</a>
-        <ul>
-        <li><a href="#">Magna phasellus</a></li>
-        <li><a href="#">Etiam dolore nisl</a></li>
-        <li><a href="#">Veroeros feugiat</a></li>
-        <li><a href="#">Nisl sed aliquam</a></li>
-        <li><a href="#">Dolore adipiscing</a></li>
-      </ul>
-    </li>
-    <li><a href="#">Veroeros feugiat</a></li>
-  </ul>
-</li>
-<li><a href="left-sidebar.html">Left Sidebar</a></li>
-<li><a href="right-sidebar.html">Right Sidebar</a></li>
-<li><a href="no-sidebar.html">No Sidebar</a></li>
-</ul>
-</nav>-->
+		<!-- Intro -->
+		<br>
+		<section id="intro" class="container">
+			<header class="major">
+				<h2>Quem somos?</h2>
+			</header>
+			<div class="row">
+				<div class="4u 12u(mobile)">
+					<section class="first">
+						<header>
+							<h2>Miss&atilde;o</h2>
+						</header>
+						<p>Desenvolver um trabalho com as fam&iacute;lias em situa&ccedil;&atilde;o de vulnerabilidade social atrav&eacute;s dos servi&ccedil;os e projetos oferecidos pela institui&ccedil;&atilde;o.</p>
+					</section>
+				</div>
+				<div class="4u 12u(mobile)">
+					<section class="middle">
+						<header>
+							<h2>Vis&atilde;o</h2>
+						</header>
+						<p>A ACOMPAR sendo reconhecida como excel&ecirc;ncia enquanto transformadora da realidade social.</p>
+					</section>
+				</div>
+				<div class="4u 12u(mobile)">
+					<section class="last">
+						<header>
+							<h2>Valores</h2>
+						</header>
+						<p>Valores da ACOMPAR.</p>
+					</section>
+				</div>
+			</div>
+
+			<section class="container">
+      			<header class="major"><h2>Proposta Pedag&oacute;gica</h2></header>
+					<div class="row">
+						<div class="2u 12u(mobile)">
+							<section class="middle">
+								<img src="images/logo_novo.svg" width="180" alt="" />
+							</section>
+						</div>
+						<div class="10u 12u(mobile)">
+							<section class="last" style="text-align: justify">
+								<p> A ACOMPAR baseia sua proposta pedag&oacute;gica numa postura s&oacute;cio-interacionista, respaldando-se em princ&iacute;pios de coopera&ccedil;&atilde;o, solidariedade e respeito &agrave;s diferen&ccedil;as. Atrav&eacute;s de um ambiente desafiador, pretende favorecer o desenvolvimento integral do indiv&iacute;duo, considerando-o em suas dimens&otilde;es f&iacute;sica, afetiva, cognitiva e social. </p>
+								<p>Dentro desta concep&ccedil;&atilde;o, visa contribuir para a constru&ccedil;&atilde;o da auto-estima e da identidade individual e de grupo, bem como, para a forma&ccedil;&atilde;o de sujeitos aut&ocirc;nomos e cr&iacute;ticos, capazes do exerc&iacute;cio pleno da cidadania. </p>
+								<p>Com atividades propostas no sentido de estimular a criatividade e capacidade de resolu&ccedil;&atilde;o de situa&ccedil;&otilde;es-problemas, objetiva qualificar as situa&ccedil;&otilde;es de intera&ccedil;&atilde;o dos sujeitos com o meio e dos sujeitos entre si, envolvendo ativamente educadores, educandos e familiares. </p>
+							</section>
+						</div>
+					</div>
+			</section>
+
+		</section>
+		<section id="historia" class="container">
+			<header class="major">
+				<h2>Hist&oacute;ria da Instituiï¿½ï¿½o</h2>
+			</header>
+			<div ng-include="'timeline.html'"></div>
+		</section>
+
+	</div>
 </div>
-<!-- Banner -->
-<section id="banner">
-  <header>
-    <h2></h2>
-  </header>
-
-</section>
-
-<!-- Intro -->
-<br>
-<section id="intro" class="container">
-  <header class="major">
-    <h2>Quem somos?</h2>
-  </header>
-  <div class="row">
-    <div class="4u 12u(mobile)">
-      <section class="first">
-
-        <header>
-          <h2>Miss&atilde;o</h2>
-        </header>
-        <p>Desenvolver um trabalho com as fam&iacute;lias em situa&ccedil;&atilde;o de vulnerabilidade social atrav&eacute;s dos servi&ccedil;os e projetos oferecidos pela institui&ccedil;&atilde;o.</p>
-      </section>
-    </div>
-    <div class="4u 12u(mobile)">
-      <section class="middle">
-
-        <header>
-          <h2>Vis&atilde;o</h2>
-        </header>
-        <p>A ACOMPAR sendo reconhecida como excel&ecirc;ncia enquanto transformadora da realidade social.</p>
-      </section>
-    </div>
-    <div class="4u 12u(mobile)">
-      <section class="last">
-
-        <header>
-          <h2>Valores</h2>
-        </header>
-        <p>Valores da ACOMPAR.</p>
-      </section>
-    </div>
-  </div>
-    
-  <section class="container">
-      
-      <header class="major"><h2>Proposta Pedag&oacute;gica</h2></header>
-    <div class="row">
-    <div class="2u 12u(mobile)">
-         <section class="middle">
-            <img src="images/logo_novo.svg" width="180" alt="" />
-        </section>
-      </div>
-      <div class="10u 12u(mobile)">
-         <section class="last" style="text-align: justify">
-            <p> A ACOMPAR baseia sua proposta pedag&oacute;gica numa postura s&oacute;cio-interacionista, respaldando-se em princ&iacute;pios de coopera&ccedil;&atilde;o, solidariedade e respeito &agrave;s diferen&ccedil;as. Atrav&eacute;s de um ambiente desafiador, pretende favorecer o desenvolvimento integral do indiv&iacute;duo, considerando-o em suas dimens&otilde;es f&iacute;sica, afetiva, cognitiva e social. </p>
-            <p>Dentro desta concep&ccedil;&atilde;o, visa contribuir para a constru&ccedil;&atilde;o da auto-estima e da identidade individual e de grupo, bem como, para a forma&ccedil;&atilde;o de sujeitos aut&ocirc;nomos e cr&iacute;ticos, capazes do exerc&iacute;cio pleno da cidadania. </p>
-            <p>Com atividades propostas no sentido de estimular a criatividade e capacidade de resolu&ccedil;&atilde;o de situa&ccedil;&otilde;es-problemas, objetiva qualificar as situa&ccedil;&otilde;es de intera&ccedil;&atilde;o dos sujeitos com o meio e dos sujeitos entre si, envolvendo ativamente educadores, educandos e familiares. </p>
-          </section>
-      </div>
- </div>
-</section>
-        
-</section>
-<section id="historia" class="container">
-  <header class="major">
-    <h2>Hist&oacute;ria da Instituição</h2>
-  </header>
-  <div ng-include="'timeline.html'"></div>
-</section>
-
-</div>
-
 <!-- Main -->
 <div id="main-wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="12u">
+	<div class="container">
+		<div class="row">
+			<div class="12u">
 
-        <!-- Portfolio -->
-        <section id="atendimentos">
-          <header class="major">
-            <h2>Educa&ccedil;&atilde;o Infantil</h2>
-            <p>Atendimento para crian&ccedil;as de 4 meses at&eacute; 6 anos de idade.</p>
-          </header>
-          <div class="row">
-            <div class="4u 12u(mobile)">
-              <section class="box">
-                <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-                <header>
-                  <h3>N&uacute;cleo II</h3>
-                </header>
-                <p>Av. Caldeia, 210.<br>
-                  (51)3367-2722  / (51)98608-6399 <br>
-                  E-mail: nucleo2@acompar.org</p>
-                  <footer>
-                    <a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
-                  </footer>
-                </section>
-              </div>
-              <div class="4u 12u(mobile)">
-                <section class="box">
-                  <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-                  <header>
-                    <h3>N&uacute;cleo III</h3>
-                  </header>
-                  <p>Rua Jo&atilde;o Paris, 1107.<br>
-                    (51)3367-3098 / (51)98608-6400 <br>
-                    E-mail: nucleo3@acompar.org</p>
-                    <footer>
-                      <a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
-                    </footer>
-                  </section>
-                </div>
+			<!-- Portfolio -->
+			<section id="atendimentos">
+				<header class="major">
+					<h2>Educa&ccedil;&atilde;o Infantil</h2>
+					<p>Atendimento para crian&ccedil;as de 4 meses at&eacute; 6 anos de idade.</p>
+				</header>
+				<div class="row">
+				<div class="4u 12u(mobile)">
+					<section class="box">
+						<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+						<header>
+							<h3>N&uacute;cleo II</h3>
+						</header>
+						<p>Av. Caldeia, 210.<br>
+						  (51)3367-2722  / (51)98608-6399 <br>
+						  E-mail: nucleo2@acompar.org</p>
+						<footer hide show-gt-sm flex>
+							<a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+						</footer>
+					</section>
+				</div>
+				<div class="4u 12u(mobile)">
+					<section class="box">
+						<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+						<header>
+							<h3>N&uacute;cleo III</h3>
+						</header>
+						<p>Rua Jo&atilde;o Paris, 1107.<br>
+						(51)3367-3098 / (51)98608-6400 <br>
+						E-mail: nucleo3@acompar.org</p>
+						<footer hide show-gt-sm flex>
+							<a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+						</footer>
+					</section>
+				</div>
                 <div class="4u 12u(mobile)">
-                  <section class="box">
-                    <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-                    <header>
-                      <h3>N&uacute;cleo V</h3>
-                    </header>
-                    <p>Rua Dr. Meer M&aacute;rio Kaufmann, 37<br>
-                      (51)3367-0045 / (51)99802-8041<br>
-                      E-mail: nucleo5@acompar.org
-                    </p>
-                    <footer>
-                      <a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
-                    </footer>
-                  </section>
+					<section class="box">
+						<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+						<header>
+							<h3>N&uacute;cleo V</h3>
+						</header>
+						<p>Rua Dr. Meer M&aacute;rio Kaufmann, 37<br>
+						  (51)3367-0045 / (51)99802-8041<br>
+						  E-mail: nucleo5@acompar.org
+						</p>
+						<footer hide show-gt-sm flex>
+							<a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+						</footer>
+					</section>
                 </div>
-              </div>
+				</div>
             </section>
-            <section>
-              <header class="major">
-                <h2>Desenvolvimento Comunitário</h2>
+			<section>
+				<header class="major">
+					<h2>Desenvolvimento Comunitï¿½rio</h2>
+				</header>
+				<div class="row">
+					<div class="4u 12u(mobile)">
+						<section class="box">
+							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+							<header>
+								<h3>N&uacute;cleo IV</h3>
+							</header>
+							<p>Rua Rosa Maria Malheiros, 27.<br>
+							  (51)3387-7745 / (51)98608-6401<br>
+							  E-mail: nucleo4@acompar.org</p>
+							<footer hide show-gt-sm flex>
+								<a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+							</footer>
+						</section>
+				  </div>
+					<div class="4u 12u(mobile)">
+						<section class="box">
+							<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+							<header>
+								<h3>N&uacute;cleo VI</h3>
+							</header>
+							<p>Av. Bernadino de Oliveira Paim, 136<br>
+								(51)3367-5442 / (51)98608-6405<br>
+								E-mail: nucleo6@acompar.org</p>
+							<footer hide show-gt-sm flex>
+							  <a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+							</footer>
+						</section>
+					</div>
+					<div class="4u 12u(mobile)">
+						<section class="box">
+							<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+							<header>
+								<h3>A&ccedil;&atilde;o Rua</h3>
+							</header>
+							<p>Rua Rosa Maria Malheiros, 27.<br>
+							(51)3387-4872 / (51)98608-6394<br>
+							E-mail: acaorua@acompar.org</p>
+							<footer hide show-gt-sm flex>
+								<a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+							</footer>
+						</section>
+					</div>
+				</div>
+			</section>
 
-              </header>
-
-              <div class="row">
-                <div class="4u 12u(mobile)">
-                  <section class="box">
-                    <a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-                    <header>
-                      <h3>N&uacute;cleo IV</h3>
-                    </header>
-                    <p>Rua Rosa Maria Malheiros, 27.<br>
-                      (51)3387-7745 / (51)98608-6401<br>
-                      E-mail: nucleo4@acompar.org</p>
-                      <footer>
-                        <a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
-                      </footer>
-
-                    </section>
-                  </div>
-                  <div class="4u 12u(mobile)">
-                    <section class="box">
-                      <a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
-                      <header>
-                        <h3>N&uacute;cleo VI</h3>
-                      </header>
-                      <p>Av. Bernadino de Oliveira Paim, 136<br>
-                        (51)3367-5442 / (51)98608-6405<br>
-                        E-mail: nucleo6@acompar.org</p>
-                        <footer>
-                          <a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
-                        </footer>
-                      </section>
-                    </div>
-                    <div class="4u 12u(mobile)">
-                      <section class="box">
-                        <a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
-                        <header>
-                          <h3>A&ccedil;&atilde;o Rua</h3>
-                        </header>
-                        <p>Rua Rosa Maria Malheiros, 27.<br>
-                          (51)3387-4872 / (51)98608-6394<br>
-                          E-mail: acaorua@acompar.org</p>
-                          <footer>
-                            <a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
-                          </footer>
-                        </section>
-                      </div>
-                    </div>
-                  </section>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="12u">
-
-                  <!-- Blog -->
-                  <section id="depoimentos">
-                    <header class="major">
-                      <h2>Depoimentos</h2>
-                    </header>
-                    <div class="row">
-
-                      <div class="6u 12u(mobile)">
-                        <section class="box">
-                          <a href="" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
-                          <header>
-                            <h3>T&iacute;tulo</h3>
-                            <p>Dados da pessoa</p>
-                          </header>
-                          <p>Depoimento sobre o que significa a ACOMPAR na sua vida.</p>
-                          <footer>
-                            <!--<ul class="actions">
-                            <li><a href="#" class="button icon fa-file-text">Continue Reading</a></li>
-                            <li><a href="#" class="button alt icon fa-comment">33 comments</a></li>
-                          </ul>-->
-                        </footer>
-                      </section>
-                    </div>
-
-                    <div class="6u 12u(mobile)">
-                      <section class="box">
-                        <a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
-                        <header>
-                          <h3>T&iacute;tulo</h3>
-                          <p>Dados da pessoa</p>
-                        </header>
-                        <p>Depoimento sobre o que significa a ACOMPAR na sua vida.</p>
-                        <footer>
-                          <!--<ul class="actions">
-                          <li><a href="#" class="button icon fa-file-text">Continue Reading</a></li>
-                          <li><a href="#" class="button alt icon fa-comment">33 comments</a></li>
-                        </ul>-->
-                      </footer>
-                    </section>
-                  </div>
-                </div>
-              </section>
-
-            </div>
-          </div>
+			</div>
         </div>
-      </div>
+		<div class="row">
+			<div class="12u">
 
-      <!-- Footer -->
-      <div id="footer-wrapper">
-        <section id="/eventos" class="container">
-          <div class="row">
-            <div class="6u 12u(mobile)">
-              <section>
-                <header style="text-align: center">
-                  <h2>Eventos da ACOMPAR</h2>
-                </header>
-                <ul class="dates">
-                  <li>
-                    <span class="date">Mai <strong>15</strong></span>
-                    <h3><a href="#">Anivers&aacute;rio da ACOMPAR</a></h3>
-                    <p>Dados do evento.</p>
-                  </li>
-                  <li>
-                    <span class="date">Jul <strong>14</strong></span>
-                    <h3><a href="#">Festa Julina</a></h3>
-                    <p>Dados do evento.</p>
-                  </li>
-                  <li>
-                    <span class="date">Out <strong>02</strong></span>
-                    <h3><a href="#">Semana da Paz</a></h3>
-                    <p>Dados do evento.</p>
-                  </li>
-                  <li>
-                    <span class="date">Nov <strong>30</strong></span>
-                    <h3><a href="#">Forma&ccedil;&atilde;o pedag&oacute;gica</a></h3>
-                    <p>Dados do evento.</p>
-                  </li>
+		  <!-- Blog -->
+				<section id="depoimentos">
+					<header class="major">
+						<h2>Depoimentos</h2>
+					</header>
+					<div class="row">
 
-                </ul>
+						<div class="6u 12u(mobile)">
+							<section class="box">
+								<a href="" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+								<header>
+									<h3>T&iacute;tulo</h3>
+									<p>Dados da pessoa</p>
+								</header>
+								<p>Depoimento sobre o que significa a ACOMPAR na sua vida.</p>
+								<footer>
+								<!--<ul class="actions">
+								<li><a href="#" class="button icon fa-file-text">Continue Reading</a></li>
+								<li><a href="#" class="button alt icon fa-comment">33 comments</a></li>
+							  </ul>-->
+								</footer>
+							</section>
+						</div>
+
+						<div class="6u 12u(mobile)">
+							<section class="box">
+								<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+								<header>
+									<h3>T&iacute;tulo</h3>
+									<p>Dados da pessoa</p>
+								</header>
+								<p>Depoimento sobre o que significa a ACOMPAR na sua vida.</p>
+								<footer>
+								  <!--<ul class="actions">
+								  <li><a href="#" class="button icon fa-file-text">Continue Reading</a></li>
+								  <li><a href="#" class="button alt icon fa-comment">33 comments</a></li>
+								</ul>-->
+							  </footer>
+							</section>
+						</div>
+					</div>
               </section>
-            </div>
-            <div class="6u 12u(mobile)">
-              <section>
-                <header style="text-align: center">
-                  <h2>V&iacute;deo Institucional</h2>
-                </header>
-                <a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
-                <p>
-                  Frase motivadora aliada ao trabalho realizado pela ACOMPAR.
-                </p>
-                <footer>
-
-                </footer>
-              </section>
-            </div>
-          </div>
-          <div class="row">
-            <div class="7u 12u(mobile)">
-              <section id="contato" style="padding-top: 20px">
-                <header style="text-align: center">
-                  <h2>Entre em Contato!</h2>
-                </header>
-                <form method="post" action="#">
-                  <label for="name">Nome:</label>
-                  <input type="text" id="name" name="name" value="" required="true"/>
-                  <label for="email">E-mail:</label>
-                  <input type="text" id="email" name="email" value=""/>
-                  <label for="name">Assunto:</label>
-                  <input type="text" id="assunt" name="assunt" value="" required="true"/>
-                  <label for="message">Mensagem:</label>
-                  <textarea id="message" name="message"></textarea>
-                  <br>
-                  <input type="submit" class="sucess" value="Enviar"/>
-                  <input type="reset" class="cancel" value="Cancelar"/>
-                </form>
-              </section>
-            </div>
-
-            <div class="5u 12u(mobile)">
-              <section style="padding-top: 20px">
-                <header style="text-align: center">
-                  <h2>Redes Sociais</h2>
-                </header>
-                <ul class="social">
-                  <li><a class="icon fa-facebook" href="http://facebook.com/Acompar"><span class="label">Facebook</span></a></li>
-                  <li><a class="icon fa-instagram" href="#"><span class="label">Twitter</span></a></li>
-
-
-                </ul>
-                <header>
-                  <h2>Links &Uacute;teis</h2>
-                </header>
-                <ul class="social">
-                  <li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-                  <li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
-                  <li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
-                </ul>
-                <ul class="contact">
-                  <li>
-                    <h3>Endere&ccedil;o</h3>
-                    <p>
-                      Av. Bernadino de Oliveira Paim, 136<br />
-                      Bairro Santa Rosa de Lima<br />
-                      Porto Alegre - RS
-                    </p>
-                  </li>
-                  <li>
-                    <h3>E-mail</h3>
-                    <p>contato@acompar.org</p>
-                  </li>
-                  <li>
-                    <h3>Telefone</h3>
-                    <p>(051) 3367-2986</p>
-                  </li>
-                </ul>
-              </section>
-            </div>
-          </div>
-          <div class="row">
-            <div class="12u">
-
-              <!-- Copyright -->
-              <div id="copyright">
-                <ul class="links">
-                  <li>&copy; ACOMPAR. All rights reserved.</li><li>Design: <a href="http://tiagomatana.com" style="text-decoration:none;color:#fff;font-weight:bold;">Tiago Matana</a></li>
-                </ul>
-              </div>
 
             </div>
-          </div>
-        </section>
-      </div>
-
+        </div>
     </div>
+</div>
+
+<!-- Footer -->
+<div id="footer-wrapper">
+	<section id="/eventos" class="container">
+		<div class="row">
+			<div class="6u 12u(mobile)">
+				<section>
+					<header style="text-align: center">
+						<h2>Eventos da ACOMPAR</h2>
+					</header>
+					<ul class="dates">
+						<li>
+							<span class="date">Mai <strong>15</strong></span>
+							<h3><a href="#">Anivers&aacute;rio da ACOMPAR</a></h3>
+							<p>Dados do evento.</p>
+						</li>
+						<li>
+							<span class="date">Jul <strong>14</strong></span>
+							<h3><a href="#">Festa Julina</a></h3>
+							<p>Dados do evento.</p>
+						</li>
+						<li>
+							<span class="date">Out <strong>02</strong></span>
+							<h3><a href="#">Semana da Paz</a></h3>
+							<p>Dados do evento.</p>
+						</li>
+						<li>
+							<span class="date">Nov <strong>30</strong></span>
+							<h3><a href="#">Forma&ccedil;&atilde;o pedag&oacute;gica</a></h3>
+							<p>Dados do evento.</p>
+						</li>
+
+					</ul>
+				</section>
+			</div>
+			<div class="6u 12u(mobile)">
+				<section>
+					<header style="text-align: center">
+						<h2>V&iacute;deo Institucional</h2>
+					</header>
+					<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+					<p>
+					Frase motivadora aliada ao trabalho realizado pela ACOMPAR.
+					</p>
+					<footer>
+
+					</footer>
+				</section>
+			</div>
+		</div>
+		<div class="row">
+			<div class="7u 12u(mobile)">
+				<section id="contato" style="padding-top: 20px">
+					<header style="text-align: center">
+						<h2>Entre em Contato!</h2>
+					</header>
+					<form method="post" action="#">
+						<label for="name">Nome:</label>
+						<input type="text" id="name" name="name" value="" required="true"/>
+						<label for="email">E-mail:</label>
+						<input type="text" id="email" name="email" value=""/>
+						<label for="name">Assunto:</label>
+						<input type="text" id="assunt" name="assunt" value="" required="true"/>
+						<label for="message">Mensagem:</label>
+						<textarea id="message" name="message"></textarea>
+						<br>
+						<input type="submit" class="sucess" value="Enviar"/>
+						<input type="reset" class="cancel" value="Cancelar"/>
+					</form>
+				</section>
+			</div>
+
+			<div class="5u 12u(mobile)">
+				<section style="padding-top: 20px">
+					<header style="text-align: center">
+						<h2>Redes Sociais</h2>
+					</header>
+						<ul class="social">
+							<li><a class="icon fa-facebook" href="http://facebook.com/Acompar"><span class="label">Facebook</span></a></li>
+							<li><a class="icon fa-instagram" href="#"><span class="label">Twitter</span></a></li>
+
+
+						</ul>
+					<header>
+						<h2>Links &Uacute;teis</h2>
+					</header>
+					<ul class="social">
+						<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+						<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
+						<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="contact">
+						<li>
+							<h3>Endere&ccedil;o</h3>
+							<p>
+							Av. Bernadino de Oliveira Paim, 136<br />
+							Bairro Santa Rosa de Lima<br />
+							Porto Alegre - RS
+							</p>
+						</li>
+						<li>
+							<h3>E-mail</h3>
+							<p>contato@acompar.org</p>
+						</li>
+						<li>
+							<h3>Telefone</h3>
+							<p>(051) 3367-2986</p>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<div class="row">
+			<div class="12u">
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul class="links">
+						<li>&copy; ACOMPAR. All rights reserved.</li><li>Design: <a href="http://tiagomatana.com" style="text-decoration:none;color:#fff;font-weight:bold;">Tiago Matana</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</div>
+
+
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
