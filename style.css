@@ -26,3 +26,15 @@ md-dialog.fullscreen-dialog {
     height: 90%;
     border-radius: 0;
 }
+.vertical-divider {
+  border-top-width: 0;
+  border-right-width: 1px;
+  border-right-style: solid;
+  height: 100%;
+}
+.btn-apoiar{
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 3px -1px rgba(66,64,66,0.8);
+-moz-box-shadow: 4px 4px 3px -1px rgba(66,64,66,0.8);
+box-shadow: 4px 4px 3px -1px rgba(66,64,66,0.8);
+}

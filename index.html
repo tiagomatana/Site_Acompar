@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="shortcut  icon" href="images/icon.png" type="image/ico">
   <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
   <link rel="stylesheet" href="style.css">
 
@@ -21,6 +22,7 @@
 
     <md-toolbar style="background-color:#fff;color:#000;height:3.5em;">
       <div class="md-toolbar-tools" layout-align="start center" layout="row" layout-xs="column">
+        <span flex></span>
        <img src="images/logo.svg"  alt="" style="padding: 0;margin: 0;width:8em;float:left;"/>
 
        <span flex></span>
@@ -30,11 +32,17 @@
 				<li class="current"><a href="#parceiros" style="color:#3495CF">Parceiros</a></li>
 				<li class="current"><a href="#eventos" style="color:#3495CF">Eventos</a></li>
 				<li class="current"><a href="#eventos" style="color:#3495CF">Seja Parceiro</a></li>
+        <li>
+          <a class="btn-apoiar sucess" style="color:#fff;padding-right:15px;padding-left:15px;border-radius:7px;" layout-align="center center">
+            <md-icon md-font-icon="favorite"><div hide show-gt-sm flex>favorite</div></md-icon>Quero Apoiar
+          </a>
+        </li>
+
             </ul>
         </nav>
 			<span flex></span>
 			<div hide show-gt-sm flex>
-				<span class="md-caption">contato@acompar.org | (51)3367-2986</span>
+				<span class="md-caption">contato@acompar.org    |    (51)3367-2986</span>
 
 
 
@@ -119,13 +127,13 @@
 		</section>
 		<section id="historia" class="container">
 			<header class="major">
-				<h2>Hist&oacute;ria da Institui��o</h2>
+				<h2>Hist&oacute;ria da Institui&ccedil;&atilde;o</h2>
 			</header>
 			<div ng-include="'timeline.html'"></div>
 		</section>
 
 	</div>
-</div>
+
 <!-- Main -->
 <div id="main-wrapper">
 	<div class="container">
@@ -186,7 +194,7 @@
             </section>
 			<section>
 				<header class="major">
-					<h2>Desenvolvimento Comunit�rio</h2>
+					<h2>Desenvolvimento Comunit&aacute;rio</h2>
 				</header>
 				<div class="row">
 					<div class="4u 12u(mobile)">
@@ -412,7 +420,7 @@
 		</div>
 	</section>
 </div>
-
+</div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
