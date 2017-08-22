@@ -11,13 +11,15 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="shortcut  icon" href="images/icon.png" type="image/ico">
   <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+  <link rel="stylesheet" href="assets/css/gallery.theme.css">
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
   <link rel="stylesheet" href="style.css">
 
 </head>
 <body class="homepage" ng-app="dialogDemo1" ng-cloak>
+
 <md-content>
 
     <md-toolbar style="background-color:#fff;color:#000;height:3.5em;">
@@ -70,16 +72,36 @@
 			<!-- <img src="images/logo.svg"  alt="" style="padding: 0;margin: 0;width:80%;height:auto;"/> -->
 		<!-- </div> -->
 
+    <div class="gallery autoplay items-2">
+      <div id="item-1" class="control-operator"></div>
+      <div id="item-2" class="control-operator"></div>
 
+
+      <figure class="item">
+        <img src="images/MontagemCamisaACOMPAR.jpg" width="100%" alt="">
+      </figure>
+
+      <figure class="item">
+        <img src="images/cartaz.jpg" alt="">
+      </figure>
+
+
+
+      <div class="controls">
+        <a href="#item-1" class="control-button">•</a>
+        <a href="#item-2" class="control-button">•</a>
+
+      </div>
+    </div>
 
 
 		<!-- Banner -->
-		<section id="banner">
+		<!-- <section id="banner">
 		  <header>
 			<h2></h2>
 		  </header>
 
-		</section>
+		</section> -->
 
 		<!-- Intro -->
 		<br>
@@ -165,7 +187,7 @@
 						  (51)3367-2722  / (51)98608-6399 <br>
 						  E-mail: nucleo2@acompar.org</p>
 						<footer hide show-gt-sm flex>
-							<a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+							<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
 						</footer>
 					</section>
 				</div>
@@ -179,7 +201,7 @@
 						(51)3367-3098 / (51)98608-6400 <br>
 						E-mail: nucleo3@acompar.org</p>
 						<footer hide show-gt-sm flex>
-							<a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+							<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
 						</footer>
 					</section>
 				</div>
@@ -194,7 +216,7 @@
 						  E-mail: nucleo5@acompar.org
 						</p>
 						<footer hide show-gt-sm flex>
-							<a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+							<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
 						</footer>
 					</section>
                 </div>
@@ -215,7 +237,7 @@
 							  (51)3387-7745 / (51)98608-6401<br>
 							  E-mail: nucleo4@acompar.org</p>
 							<footer hide show-gt-sm flex>
-								<a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+								<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
 							</footer>
 						</section>
 				  </div>
@@ -229,7 +251,7 @@
 								(51)3367-5442 / (51)98608-6405<br>
 								E-mail: nucleo6@acompar.org</p>
 							<footer hide show-gt-sm flex>
-							  <a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+							  <a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
 							</footer>
 						</section>
 					</div>
@@ -243,7 +265,7 @@
 							(51)3387-4872 / (51)98608-6394<br>
 							E-mail: acaorua@acompar.org</p>
 							<footer hide show-gt-sm flex>
-								<a href="" class="button alt" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+								<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
 							</footer>
 						</section>
 					</div>
@@ -338,11 +360,12 @@
 				</section>
 			</div>
 			<div class="6u 12u(mobile)">
-				<section>
+				<section layout-align="center">
 					<header style="text-align: center">
-						<h2>V&iacute;deo Institucional</h2>
+						<h2>P&aacute;gina Oficial</h2>
 					</header>
-					<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+					<!-- <a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a> -->
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAcompar&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1541477552560430" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 					<p>
 					Frase motivadora aliada ao trabalho realizado pela ACOMPAR.
 					</p>
