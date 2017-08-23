@@ -1816,7 +1816,7 @@
 
 /* Desktop */
 
-	@media screen and (min-width: 737px) {
+	@media screen and (min-width: 1137px) {
 
 		/* Basic */
 
@@ -2263,7 +2263,7 @@
 		display: none;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 1136px) {
 
         #btnInfo{
     display: none;
