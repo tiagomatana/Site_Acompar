@@ -30,9 +30,16 @@
  <span flex="5"></span>
 			<nav id="nav" style="text-size:12px">
 			<ul>
-				<li class="current"><a href="#intro">Institui&ccedil;&atilde;o</a></li>
-        <li class="current"><a href="#atendimentos" style="color:#3495CF">Atendimentos</a></li>
-				<li class="current"><a href="#parceiros" style="color:#3495CF">Parceiros</a></li>
+				<li class="current">
+          <a href="#">Institui&ccedil;&atilde;o</a>
+          <ul class="" style="user-select: none; display: none; position: absolute;">
+            <li style="white-space: nowrap;"><a href="#atendimentos" style="display: block;">Atendimentos</a></li>
+            <li style="white-space: nowrap;"><a href="#parceiros" style="display: block;">Parceiros</a></li>
+
+				   </ul>
+        </li>
+
+
 				<li>
 
           <md-button class="btn-apoiar" style="background-color:#46cece">
@@ -72,14 +79,7 @@
 
 
 
-  <div id="page-wrapper" ng-controller="AppCtrl">
-
-    <!-- Header -->
-    <div id="header-wrapper" style="text-align: center;padding: 0;margin: 0;">
-		<!-- <div id="header" style="text-align: center;padding: 0;margin: 0;"> -->
-			<!-- <img src="images/logo.svg"  alt="" style="padding: 0;margin: 0;width:80%;height:auto;"/> -->
-		<!-- </div> -->
-
+  <div id="page-wrapper" ng-controller="AppCtrl" flex>
     <div class="gallery autoplay items-2">
       <div id="item-1" class="control-operator"></div>
       <div id="item-2" class="control-operator"></div>
@@ -101,6 +101,13 @@
 
       </div>
     </div>
+    <!-- Header -->
+    <div id="header-wrapper" style="text-align: center;padding: 0;margin: 0;">
+		<!-- <div id="header" style="text-align: center;padding: 0;margin: 0;"> -->
+			<!-- <img src="images/logo.svg"  alt="" style="padding: 0;margin: 0;width:80%;height:auto;"/> -->
+		<!-- </div> -->
+
+
 
 
 		<!-- Banner -->
@@ -144,15 +151,16 @@
 				</div>
 			</div>
 
-			<section class="container">
+			<section class="container" flex>
       			<header class="major"><h2>Proposta Pedag&oacute;gica</h2></header>
-					<div class="row">
+					<div class="row" layout-sm="column" layout-align="center center">
 						<div class="2u 12u(mobile)">
 							<section class="middle">
-								<img src="images/logo_novo.svg" width="180" alt="" />
+								<img src="images/logo_novo.svg" width="180em" alt="" />
 							</section>
 						</div>
-						<div class="10u 12u(mobile)">
+
+						<div class="10u 12u(mobile)" >
 							<section class="last" style="text-align: justify">
 								<p> A ACOMPAR baseia sua proposta pedag&oacute;gica numa postura s&oacute;cio-interacionista, respaldando-se em princ&iacute;pios de coopera&ccedil;&atilde;o, solidariedade e respeito &agrave;s diferen&ccedil;as. Atrav&eacute;s de um ambiente desafiador, pretende favorecer o desenvolvimento integral do indiv&iacute;duo, considerando-o em suas dimens&otilde;es f&iacute;sica, afetiva, cognitiva e social. </p>
 								<p>Dentro desta concep&ccedil;&atilde;o, visa contribuir para a constru&ccedil;&atilde;o da auto-estima e da identidade individual e de grupo, bem como, para a forma&ccedil;&atilde;o de sujeitos aut&ocirc;nomos e cr&iacute;ticos, capazes do exerc&iacute;cio pleno da cidadania. </p>

@@ -43,3 +43,7 @@ box-shadow: 4px 4px 3px -1px rgba(66,64,66,0.8);
 md-button:hover{
   box-shadow: none;
 }
+
+section{
+  border: none !important;
+}
