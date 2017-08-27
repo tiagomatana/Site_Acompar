@@ -21,7 +21,7 @@
   overflow: hidden;
   text-align: center;
   /*background: #4d87e2;*/
-  background: transparent;
+  background: #ffffff;
 }
 .gallery .item img{
   width: 100%;

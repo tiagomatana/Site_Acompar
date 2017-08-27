@@ -1,5 +1,12 @@
+<?php
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+header("Cache-Control: no-store, no-cache, must-revalidate");
+
+header("Cache-Control: post-check=0, pre-check=0", false);
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
 
 
@@ -30,9 +37,9 @@
 <span flex></span>
 			<nav id="nav">
 			<ul>
-				<li class="current">
-          <a href="#">Institui&ccedil;&atilde;o</a>
-          <ul class="" style="user-select: none; display: none; position: absolute;">
+				<li>
+          <a href="#" style="color:#3495CF">Institui&ccedil;&atilde;o</a>
+          <ul class="" style="user-select: none; display: none; position: absolute;background-color:#46cece">
             <li style="white-space: nowrap;"><a href="#atendimentos" style="display: block;">Atendimentos</a></li>
             <li style="white-space: nowrap;"><a href="#parceiros" style="display: block;">Parceiros</a></li>
 
