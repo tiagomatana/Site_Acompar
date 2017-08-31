@@ -138,15 +138,7 @@
     self.answer = function(answer) {
       $mdDialog.hide(answer);
     };
-    self.verify = function(){
-        var w = $(window).width();
-        console.log(w);
-        if(w>400){
-            return true;
-        } else {
-            return false;
-        }
-    }
+
   }
 });
 })();
