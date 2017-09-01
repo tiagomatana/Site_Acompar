@@ -10,12 +10,11 @@
 
     angular
         .module('dialogDemo1', ['ngMaterial'])
-        .controller('AppCtrl', function($mdDialog) {
-            var self = this;
-            self.status = '';
-            self.customFullscreen = false;
+        .controller('AppCtrl', function($scope, $mdDialog) {
+            $scope.status = '';
+            $scope.customFullscreen = false;
 
-            self.showAlert = function(ev) {
+            $scope.showAlert = function(ev) {
     // Appending dialog to document.body to cover sidenav in docs app
     // Modal dialogs should fully cover application
     // to prevent interaction outside of dialog
@@ -24,15 +23,15 @@
                   $mdDialog.alert()
                     .parent(angular.element(document.querySelector('#popupContainer')))
                     .clickOutsideToClose(true)
-                    .title('This is an alert title')
-                    .textContent('You can specify some description text in here.')
+                    .title('ATENÇÃO')
+                    .textContent('Um simples alerta!')
                     .ariaLabel('Alert Dialog Demo')
-                    .ok('Got it!')
+                    .ok('Entendi')
                     .targetEvent(ev)
                 );
               };
 
-              self.showConfirm = function(ev) {
+              $scope.showConfirm = function(ev) {
                 // Appending dialog to document.body to cover sidenav in docs app
                 var confirm = $mdDialog.confirm()
                       .title('Would you like to delete your debt?')
@@ -43,32 +42,32 @@
                       .cancel('Sounds like a scam');
 
                 $mdDialog.show(confirm).then(function() {
-                  self.status = 'You decided to get rid of your debt.';
+                  $scope.status = 'You decided to get rid of your debt.';
                 }, function() {
-                  self.status = 'You decided to keep your debt.';
+                  $scope.status = 'You decided to keep your debt.';
                 });
               };
 
-  self.showPrompt = function(ev) {
+  $scope.showPrompt = function(ev) {
     // Appending dialog to document.body to cover sidenav in docs app
     var confirm = $mdDialog.prompt()
-      .title('What would you name your dog?')
-      .textContent('Bowser is a common name.')
-      .placeholder('Dog name')
-      .ariaLabel('Dog name')
-      .initialValue('Buddy')
+      .title('Entre em contato!')
+      .textContent('Informe seus dados')
+      .placeholder('Nome')
+      .ariaLabel('name')
+      .initialValue('')
       .targetEvent(ev)
-      .ok('Okay!')
-      .cancel('I\'m a cat person');
+      .ok('OK')
+      .cancel('Cancelar');
 
     $mdDialog.show(confirm).then(function(result) {
-      self.status = 'You decided to name your dog ' + result + '.';
+      $scope.status = 'seu nome é ' + result + '.';
     }, function() {
-      self.status = 'You didn\'t name your dog.';
+      $scope.status = 'Você cancelou a ação.';
     });
   };
 
-  self.showAdvanced = function(ev) {
+  $scope.showAdvanced = function(ev) {
       var w = window.innerWidth;
     console.log(w);
       if(w>200){
@@ -78,12 +77,12 @@
               parent: angular.element(document.body),
               targetEvent: ev,
               clickOutsideToClose:true,
-              fullscreen: self.customFullscreen // Only for -xs, -sm breakpoints.
+              fullscreen: $scope.customFullscreen // Only for -xs, -sm breakpoints.
             })
             .then(function(answer) {
-              self.status = 'You said the information was "' + answer + '".';
+              $scope.status = 'You said the information was "' + answer + '".';
             }, function() {
-              self.status = 'You cancelled the dialog.';
+              $scope.status = 'You cancelled the dialog.';
             });
       }else{
           var confirm = $mdDialog.confirm()
@@ -95,14 +94,14 @@
                       .cancel('');
 
                 $mdDialog.show(confirm).then(function() {
-                  self.status = 'You decided to get rid of your debt.';
+                  $scope.status = 'You decided to get rid of your debt.';
                 }, function() {
-                  self.status = 'You decided to keep your debt.';
+                  $scope.status = 'You decided to keep your debt.';
                 });
       }
   };
 
-  self.showTabDialog = function(ev) {
+  $scope.showTabDialog = function(ev) {
     $mdDialog.show({
       controller: DialogController,
       templateUrl: 'tabDialog.tmpl.html',
@@ -111,13 +110,13 @@
       clickOutsideToClose:true
     })
         .then(function(answer) {
-          self.status = 'You said the information was "' + answer + '".';
+          $scope.status = 'You said the information was "' + answer + '".';
         }, function() {
-          self.status = 'You cancelled the dialog.';
+          $scope.status = 'You cancelled the dialog.';
         });
   };
 
-  self.showPrerenderedDialog = function(ev) {
+  $scope.showPrerenderedDialog = function(ev) {
     $mdDialog.show({
       contentElement: '#myDialog',
       parent: angular.element(document.body),
@@ -126,19 +125,27 @@
     });
   };
 
-  function DialogController(self, $mdDialog) {
-    self.hide = function() {
+  function DialogController($scope, $mdDialog) {
+    $scope.hide = function() {
       $mdDialog.hide();
     };
 
-    self.cancel = function() {
+    $scope.cancel = function() {
       $mdDialog.cancel();
     };
 
-    self.answer = function(answer) {
+    $scope.answer = function(answer) {
       $mdDialog.hide(answer);
     };
+    $scope.verify = function(){
+        var w = $(window).width();
 
+        if(w>400){
+            return true;
+        } else {
+            return false;
+        }
+    }
   }
 });
 })();
