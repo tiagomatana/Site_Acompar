@@ -18,15 +18,16 @@
     // Appending dialog to document.body to cover sidenav in docs app
     // Modal dialogs should fully cover application
     // to prevent interaction outside of dialog
+                var msg = 'Nosso novo parceiro ' + $scope.status;
                 $mdDialog.show(
 
                   $mdDialog.alert()
                     .parent(angular.element(document.querySelector('#popupContainer')))
                     .clickOutsideToClose(true)
-                    .title('ATENÇÃO')
-                    .textContent('Um simples alerta!')
+                    .title('Obrigado!')
+                    .textContent(msg)
                     .ariaLabel('Alert Dialog Demo')
-                    .ok('Entendi')
+                    .ok('FECHAR')
                     .targetEvent(ev)
                 );
               };
@@ -51,8 +52,8 @@
   $scope.showPrompt = function(ev) {
     // Appending dialog to document.body to cover sidenav in docs app
     var confirm = $mdDialog.prompt()
-      .title('Entre em contato!')
-      .textContent('Informe seus dados')
+      .title('Novo Parceiro')
+      .textContent('Qual é o seu nome?')
       .placeholder('Nome')
       .ariaLabel('name')
       .initialValue('')
@@ -61,16 +62,16 @@
       .cancel('Cancelar');
 
     $mdDialog.show(confirm).then(function(result) {
-      $scope.status = 'seu nome é ' + result + '.';
+      $scope.status =  result;
+      $scope.showAlert(ev);
     }, function() {
       $scope.status = 'Você cancelou a ação.';
     });
   };
 
-  $scope.showAdvanced = function(ev) {
-      var w = window.innerWidth;
-    console.log(w);
-      if(w>200){
+  $scope.showAdvanced = function(ev,nucleo) {
+      self.nucleo = nucleo;
+
             $mdDialog.show({
               controller: DialogController,
               templateUrl: 'dialog1.tmpl.html',
@@ -84,21 +85,7 @@
             }, function() {
               $scope.status = 'You cancelled the dialog.';
             });
-      }else{
-          var confirm = $mdDialog.confirm()
-                      .title('Desculpe...')
-                      .textContent('Acesse o site atráves de um computador para visualizar esse conteúdo!')
-                      .ariaLabel('Alert')
-                      .targetEvent(ev)
-                        .ok('Entendi')
-                      .cancel('');
 
-                $mdDialog.show(confirm).then(function() {
-                  $scope.status = 'You decided to get rid of your debt.';
-                }, function() {
-                  $scope.status = 'You decided to keep your debt.';
-                });
-      }
   };
 
   $scope.showTabDialog = function(ev) {
@@ -126,6 +113,7 @@
   };
 
   function DialogController($scope, $mdDialog) {
+    $scope.nucleo = self.nucleo;
     $scope.hide = function() {
       $mdDialog.hide();
     };

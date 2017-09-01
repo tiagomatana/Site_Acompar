@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
-<body class="homepage" >
+<body class="homepage" ng-controller="AppCtrl">
 
 <md-content>
 
@@ -42,7 +42,7 @@
 
 				<li>
 
-          <md-button class="btn-apoiar" style="background-color:#46cece">
+          <md-button class="btn-apoiar" style="background-color:#46cece" ng-click="showPrompt($event)">
           <!-- <a class="btn-apoiar sucess" style="color:#fff;padding-right:15px;padding-left:15px;padding-top:10px;padding-bottom:10px;border-radius:7px;" layout-align="center center">
             </a> -->
             <a href="">
@@ -80,7 +80,7 @@
 
 
 
-  <div id="page-wrapper" ng-controller="AppCtrl" flex>
+  <div id="page-wrapper" flex>
     <div class="gallery autoplay items-2">
       <div id="item-1" class="control-operator"></div>
       <div id="item-2" class="control-operator"></div>
@@ -204,7 +204,7 @@
 						  (51)3367-2722  / (51)98608-6399 <br>
 						  E-mail: nucleo2@acompar.org</p>
 						<footer hide show-gt-sm flex>
-							<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced()">Mais informa&ccedil;&otilde;es</a>
+							<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo II')">Mais informa&ccedil;&otilde;es</a>
 						</footer>
 					</section>
 				</div>
@@ -218,7 +218,7 @@
 						(51)3367-3098 / (51)98608-6400 <br>
 						E-mail: nucleo3@acompar.org</p>
 						<footer hide show-gt-sm flex>
-							<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+							<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo III')">Mais informa&ccedil;&otilde;es</a>
 						</footer>
 					</section>
 				</div>
@@ -233,7 +233,7 @@
 						  E-mail: nucleo5@acompar.org
 						</p>
 						<footer hide show-gt-sm flex>
-							<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+							<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo V')">Mais informa&ccedil;&otilde;es</a>
 						</footer>
 					</section>
                 </div>
@@ -254,7 +254,7 @@
 							  (51)3387-7745 / (51)98608-6401<br>
 							  E-mail: nucleo4@acompar.org</p>
 							<footer hide show-gt-sm flex>
-								<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+								<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo IV')">Mais informa&ccedil;&otilde;es</a>
 							</footer>
 						</section>
 				  </div>
@@ -268,7 +268,7 @@
 								(51)3367-5442 / (51)98608-6405<br>
 								E-mail: nucleo6@acompar.org</p>
 							<footer hide show-gt-sm flex>
-							  <a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+							  <a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo VI')">Mais informa&ccedil;&otilde;es</a>
 							</footer>
 						</section>
 					</div>
@@ -282,7 +282,7 @@
 							(51)3387-4872 / (51)98608-6394<br>
 							E-mail: acaorua@acompar.org</p>
 							<footer hide show-gt-sm flex>
-								<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event)">Mais informa&ccedil;&otilde;es</a>
+								<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Ação Rua')">Mais informa&ccedil;&otilde;es</a>
 							</footer>
 						</section>
 					</div>
@@ -448,8 +448,8 @@
 						</li>
 
             <li>
-              <h3>P&aacute;gina</h3>
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAcompar&width=500&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1541477552560430" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" flex></iframe>
+              <h3 hide show-gt-sm>P&aacute;gina</h3>
+                <iframe hide show-gt-sm src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAcompar&width=400&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1541477552560430" height="250" style="border:none;overflow:hidden;width:500px" scrolling="no" frameborder="0" allowTransparency="true" flex></iframe>
             </li>
 					</ul>
 				</section>
