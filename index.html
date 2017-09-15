@@ -172,7 +172,7 @@
 			</section>
 
 		</section>
-		<section id="historia" class="container">
+		<section id="historia" class="container" ng-if="historico">
 			<header class="major">
 				<h2>Hist&oacute;ria da Institui&ccedil;&atilde;o</h2>
 			</header>
@@ -203,7 +203,7 @@
 						<p>Av. Caldeia, 210.<br>
 						  (51)3367-2722  / (51)98608-6399 <br>
 						  E-mail: nucleo2@acompar.org</p>
-						<footer hide show-gt-sm flex>
+						<footer hide show-gt-sm flex ng-if="dialogNucleo">
 							<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo II')">Mais informa&ccedil;&otilde;es</a>
 						</footer>
 					</section>
@@ -217,7 +217,7 @@
 						<p>Rua Jo&atilde;o Paris, 1107.<br>
 						(51)3367-3098 / (51)98608-6400 <br>
 						E-mail: nucleo3@acompar.org</p>
-						<footer hide show-gt-sm flex>
+						<footer hide show-gt-sm flex ng-if="dialogNucleo">
 							<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo III')">Mais informa&ccedil;&otilde;es</a>
 						</footer>
 					</section>
@@ -232,7 +232,7 @@
 						  (51)3367-0045 / (51)99802-8041<br>
 						  E-mail: nucleo5@acompar.org
 						</p>
-						<footer hide show-gt-sm flex>
+						<footer hide show-gt-sm flex ng-if="dialogNucleo">
 							<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo V')">Mais informa&ccedil;&otilde;es</a>
 						</footer>
 					</section>
@@ -253,7 +253,7 @@
 							<p>Rua Rosa Maria Malheiros, 27.<br>
 							  (51)3387-7745 / (51)98608-6401<br>
 							  E-mail: nucleo4@acompar.org</p>
-							<footer hide show-gt-sm flex>
+							<footer hide show-gt-sm flex ng-if="dialogNucleo">
 								<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo IV')">Mais informa&ccedil;&otilde;es</a>
 							</footer>
 						</section>
@@ -267,7 +267,7 @@
 							<p>Av. Bernadino de Oliveira Paim, 136<br>
 								(51)3367-5442 / (51)98608-6405<br>
 								E-mail: nucleo6@acompar.org</p>
-							<footer hide show-gt-sm flex>
+							<footer hide show-gt-sm flex ng-if="dialogNucleo">
 							  <a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo VI')">Mais informa&ccedil;&otilde;es</a>
 							</footer>
 						</section>
@@ -281,7 +281,7 @@
 							<p>Rua Rosa Maria Malheiros, 27.<br>
 							(51)3387-4872 / (51)98608-6394<br>
 							E-mail: acaorua@acompar.org</p>
-							<footer hide show-gt-sm flex>
+							<footer hide show-gt-sm flex ng-if="dialogNucleo">
 								<a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Ação Rua')">Mais informa&ccedil;&otilde;es</a>
 							</footer>
 						</section>
@@ -295,7 +295,7 @@
 			<div class="12u">
 
 		  <!-- Blog -->
-				<section id="depoimentos">
+				<section id="depoimentos" ng-if="depoimentos">
 					<header class="major">
 						<h2>Depoimentos</h2>
 					</header>
@@ -405,11 +405,11 @@
 					</header>
 					<form method="post" action="#">
 						<label for="name">Nome:</label>
-						<input type="text" id="name" name="name" value="" required="true"/>
+						<input type="text" id="name" name="name" ng-model="nome" required="true"/>
 						<label for="email">E-mail:</label>
-						<input type="text" id="email" name="email" value=""/>
+						<input type="text" id="email" name="email" ng-model="email"/>
 						<label for="name">Assunto:</label>
-						<input type="text" id="assunt" name="assunt" value="" required="true"/>
+						<input type="text" id="assunt" name="assunt" ng-model="assunto" required="true"/>
 						<label for="message">Mensagem:</label>
 						<textarea id="message" name="message"></textarea>
 						<br>
@@ -426,10 +426,10 @@
 					</header>
 						<ul class="social">
 							<li><a class="icon fa-facebook" href="http://facebook.com/Acompar"><span class="label">Facebook</span></a></li>
-							<li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+							<!-- <li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
               <li><a class="icon fa-twitter" href="#"><span class="label">Dribbble</span></a></li>
   						<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
-  						<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+  						<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li> -->
 
 						</ul>
 
@@ -492,7 +492,7 @@
 
     <!-- Angular Material Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
-    <script type="text/javascript" src="dialogDemo1.module.js"></script>
+    <script type="text/javascript" src="acompar.module.js"></script>
 
 
   </body>

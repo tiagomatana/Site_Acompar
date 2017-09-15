@@ -11,8 +11,16 @@
     angular
         .module('dialogDemo1', ['ngMaterial'])
         .controller('AppCtrl', function($scope, $mdDialog) {
+            $scope.historico = false;
+            $scope.dialogNucleo = false;
+            $scope.depoimentos = false;
+
             $scope.status = '';
             $scope.customFullscreen = false;
+
+            $scope.sendEmail = function(){
+              var Indata = {'nome': $scope.nome,'email': $scope.email,'assunto': $scope.assunto,'mensagem': $scope.mensagem}
+            }
 
             $scope.showAlert = function(ev) {
     // Appending dialog to document.body to cover sidenav in docs app
