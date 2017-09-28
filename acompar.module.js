@@ -14,7 +14,18 @@
             $scope.historico = false;
             $scope.dialogNucleo = false;
             $scope.depoimentos = false;
-
+            $scope.eventos = [{
+              dia: "15",
+              mes: 'Mai',
+              title: 'Aniversário da Acompar',
+              detail: 'detalhe do evento'
+            },
+            {
+              dia: "02",
+              mes: 'Out',
+              title: 'Semana da paz',
+              detail: 'detalhe do evento'
+            }];
             $scope.status = '';
             $scope.customFullscreen = false;
 

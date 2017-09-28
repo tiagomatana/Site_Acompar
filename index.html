@@ -22,7 +22,7 @@
 
 <md-content>
 
-    <md-toolbar style="background-color:#fff;color:#000;height:3.5em;">
+    <md-toolbar style="background-color:#fff;color:#000;height:3.5em;" md-whiteframe="6dp" class="toolbar">
       <div class="md-toolbar-tools" layout-align="start center" layout="row" layout-xs="column">
 <span flex></span>
        <img src="images/logo.svg"  alt="" style="padding: 0;margin: 0;width:8em;float:left;"/>
@@ -31,8 +31,8 @@
 			<nav id="nav">
 			<ul>
 				<li>
-          <a href="#" style="color:#3495CF">Institui&ccedil;&atilde;o</a>
-          <ul class="" style="user-select: none; display: none; position: absolute;background-color:#46cece">
+          <a href="#" style="color:#3495CF;b">Institui&ccedil;&atilde;o</a>
+          <ul class="" style="user-select: none; display: none; position: absolute;background-color:#fff">
             <li style="white-space: nowrap;"><a href="#atendimentos" style="display: block;">Atendimentos</a></li>
             <li style="white-space: nowrap;"><a href="#parceiros" style="display: block;">Parceiros</a></li>
 
@@ -48,7 +48,7 @@
             <a href="">
             <md-icon md-svg-src="img/favorite.svg" aria-label="favorite"></md-icon>
 
-            <span style="color:#fff;">Quero Apoiar</span></a>
+            <span style="color:#fff;font-weight:bold">Quero Apoiar</span></a>
 
         </md-button>
 
@@ -352,31 +352,12 @@
 						<h2>Eventos da ACOMPAR</h2>
 					</header>
 					<ul class="dates">
-						<li>
-							<span class="date">Mai <strong>15</strong></span>
-							<h3><a href="#">Anivers&aacute;rio da ACOMPAR</a></h3>
-							<p>Dados do evento.</p>
+						<li ng-repeat="e in eventos">
+							<span class="date">{{e.mes}} <strong>{{e.dia}}</strong></span>
+							<h3><a href="#">{{e.title}}</a></h3>
+							<p>{{e.detail}}</p>
 						</li>
-						<li>
-							<span class="date">Jul <strong>14</strong></span>
-							<h3><a href="#">Festa Julina</a></h3>
-							<p>Dados do evento.</p>
-						</li>
-						<li>
-							<span class="date">Out <strong>02</strong></span>
-							<h3><a href="#">Semana da Paz</a></h3>
-							<p>Dados do evento.</p>
-						</li>
-						<li>
-							<span class="date">Nov <strong>30</strong></span>
-							<h3><a href="#">Forma&ccedil;&atilde;o pedag&oacute;gica</a></h3>
-							<p>Dados do evento.</p>
-						</li>
-						<li>
-							<span class="date">Nov <strong>30</strong></span>
-							<h3><a href="#">Forma&ccedil;&atilde;o pedag&oacute;gica</a></h3>
-							<p>Dados do evento.</p>
-						</li>
+						
 
 					</ul>
 				</section>
@@ -397,13 +378,13 @@
 				</section>
 			</div>
 		</div>
+		<header style="text-align: center">
+			<h2>Entre em Contato!</h2>
+		</header>
 		<div class="row">
 			<div class="6u 12u(mobile)">
 				<section id="contato" style="padding-top: 20px">
-					<header style="text-align: center">
-						<h2>Entre em Contato!</h2>
-					</header>
-					<form method="post" action="#">
+						<form method="post" action="#">
 						<label for="name">Nome:</label>
 						<input type="text" id="name" name="name" ng-model="nome" required="true"/>
 						<label for="email">E-mail:</label>
@@ -421,6 +402,7 @@
 
 			<div class="6u 12u(mobile)">
 				<section style="padding-top: 20px">
+					<div ng-if="links">
 					<header style="text-align: center">
 						<h2>Links &Uacute;teis</h2>
 					</header>
@@ -432,7 +414,7 @@
   						<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li> -->
 
 						</ul>
-
+					</div>
 					<ul class="contact">
 						<li>
 							<h3>Endere&ccedil;o</h3>
@@ -455,13 +437,15 @@
 				</section>
 			</div>
 		</div>
-		<div class="row">
+		<div class="column">
 			<div class="12u">
 
 				<!-- Copyright -->
 				<div id="copyright">
 					<ul class="links">
-						<li>&copy; ACOMPAR. All rights reserved.</li><li>Developer: <a href="https://tiagomatana.com" style="text-decoration:none;color:#fff;font-weight:bold;">Tiago Matana Development</a></li>
+						<li>&copy; ACOMPAR, CNPJ: 92925726/0001-53.</li>
+						<li>Todos os direitos reservados</li>
+						<li>Developer: <a href="https://tiagomatana.com" style="text-decoration:none;color:#fff;font-weight:bold;">Tiago Matana Development</a></li>
 					</ul>
 				</div>
 
