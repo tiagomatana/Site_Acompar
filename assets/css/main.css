@@ -1865,6 +1865,12 @@ ol.default li {
 		font-size: 13pt;
 		line-height: 1.75em;
 	}
+	.gallery {
+		
+		margin-top: 4em;
+		padding-bottom: -4em;
+	  }
+
 	.toolbar{
 		position:fixed;
 	}
@@ -2231,6 +2237,12 @@ md-icon::after {
 	#btnInfo {
 		display: none;
 	}
+
+	.gallery {
+		position: relative;
+		height: auto;
+		margin-top: 0;
+	  }
 	/* Basic */
 	html,
 	body {
