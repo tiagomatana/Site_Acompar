@@ -30,14 +30,19 @@
       $scope.status = '';
       $scope.customFullscreen = false;
 
+      function clearEmail(){
+        $scope.name = '';
+        $scope.email = '';
+        $scope.subject = '';
+        $scope.message = '';
+      }
+
       $scope.sendEmail = function (ev) {
-        var Indata = {
-          'name': $scope.name,
-          'email': $scope.email,
-          'subject': $scope.subject,
-          'message': $scope.message
-        };
-        $http.post("https://tiagomatana.com/acompar/email.php", Indata).then(function (response) {
+        var data= {'name': $scope.name,'email': $scope.email,'subject': $scope.subject,'message': $scope.message};
+        $http.post(
+          "https://tiagomatana.com/acompar/email.php", 
+          data
+        ).then(function (response) {
           $mdDialog.show(
             $mdDialog.alert()
             .parent(angular.element(document.querySelector('#popupContainer')))
@@ -48,6 +53,9 @@
             .ok('FECHAR')
             .targetEvent(ev)
           );
+          if(response.data === "Email enviado com sucesso."){
+            clearEmail();
+          }
         },function(response){
           $mdDialog.show(
             $mdDialog.alert()
@@ -59,7 +67,7 @@
             .ok('FECHAR')
             .targetEvent(ev)
           );
-        })
+        });
       }
 
       $scope.showAlert = function (ev) {
