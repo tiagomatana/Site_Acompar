@@ -37,24 +37,24 @@
           'subject': $scope.subject,
           'message': $scope.message
         };
-        $http.post("/email.php", Indata).then(function (response) {
+        $http.post("https://tiagomatana.com/acompar/email.php", Indata).then(function (response) {
           $mdDialog.show(
             $mdDialog.alert()
             .parent(angular.element(document.querySelector('#popupContainer')))
             .clickOutsideToClose(true)
-            .title('Email enviado')
+            .title('Enviando...')
             .textContent(response.data)
             .ariaLabel('Alert Dialog Demo')
             .ok('FECHAR')
             .targetEvent(ev)
           );
-        },function(){
+        },function(response){
           $mdDialog.show(
             $mdDialog.alert()
             .parent(angular.element(document.querySelector('#popupContainer')))
             .clickOutsideToClose(true)
             .title('ATENÇÃO')
-            .textContent("Email não foi enviado.")
+            .textContent(response.data)
             .ariaLabel('Alert Dialog Demo')
             .ok('FECHAR')
             .targetEvent(ev)
