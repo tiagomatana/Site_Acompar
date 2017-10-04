@@ -1,23 +1,41 @@
 <?php
- 
 ini_set ('display_errors', 1);
  
 error_reporting (E_ALL);
+
+if($_POST){
+    $name = $_POST["name"];
+
+    $from = $_POST["email"];
+    
+    $to = "tiago.matana@gmail.com";
+    
+    $subject = $_POST["subject"];
+    
+    $message = $_POST["message"];
+} else {
+    $from = "contato@acompar.org";
+     
+    $to = "contato@acompar.org";
+     
+    $subject = "EMAIL DO SITE";
+     
+    $message = "Não foi possível receber os dados do email! Contate o administrador da rede.";
+
+
+}
  
-$from = "contato@tiagomatana.com";
  
-$to = "tiago.matana@gmail.com";
  
-$subject = "Verificando o correio do PHP";
- 
-$message = "O correio do PHP funciona bem";
- 
-$headers = 'From: administrativo@acompar.org' . "\r\n" .
-'Reply-To: contato@tiagomatana.com' . "\r\n" .
+$headers = 'From: '.$from. "\r\n" .
 'X-Mailer: PHP/' . phpversion();
  
-mail($to, $subject, $message, $headers);
+if(mail($to, $subject, $message, $headers)){
+    echo "Email enviado com sucesso.";
+} else {
+    echo "Não foi possível enviar o email.";
+}
  
-echo "A mensagem de e-mail foi enviada.";
+
  
 ?>

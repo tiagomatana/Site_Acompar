@@ -385,17 +385,17 @@
 		<div class="row">
 			<div class="6u 12u(mobile)">
 				<section id="contato" style="padding-top: 20px">
-						<form method="post" action="#">
+						<form>
 						<label for="name">Nome:</label>
-						<input type="text" id="name" name="name" ng-model="nome" required="true"/>
+						<input type="text" id="name" name="nome" ng-model="name" required="true"/>
 						<label for="email">E-mail:</label>
 						<input type="text" id="email" name="email" ng-model="email"/>
 						<label for="name">Assunto:</label>
-						<input type="text" id="assunt" name="assunt" ng-model="assunto" required="true"/>
+						<input type="text" id="subject" name="subject" ng-model="subject" required="true"/>
 						<label for="message">Mensagem:</label>
-						<textarea id="message" name="message"></textarea>
+						<textarea id="message" name="message" ng-model="message"></textarea>
 						<br>
-						<input type="submit" class="sucess" value="Enviar"/>
+						<input type="button" class="sucess" value="Enviar" ng-click="sendEmail()"/>
 						<input type="reset" class="cancel" value="Cancelar"/>
 					</form>
 				</section>
