@@ -395,7 +395,7 @@
 						<label for="message">Mensagem:</label>
 						<textarea id="message" name="message" ng-model="message"></textarea>
 						<br>
-						<input type="button" class="sucess" value="Enviar" ng-click="sendEmail()"/>
+						<input type="button" class="sucess" value="Enviar" ng-click="sendEmail($event)"/>
 						<input type="reset" class="cancel" value="Cancelar"/>
 					</form>
 				</section>

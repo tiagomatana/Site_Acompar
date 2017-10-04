@@ -30,7 +30,7 @@
       $scope.status = '';
       $scope.customFullscreen = false;
 
-      $scope.sendEmail = function () {
+      $scope.sendEmail = function (ev) {
         var Indata = {
           'name': $scope.name,
           'email': $scope.email,
