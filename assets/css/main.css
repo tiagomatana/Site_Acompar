@@ -1730,7 +1730,7 @@ ol.default li {
 	-o-background-size: cover;
 	background-size: cover;
 	padding: 0;
-	height: 30em;
+	height: 100%;
 	width: 100%;
 	margin: 0;
 }
@@ -1866,7 +1866,7 @@ ol.default li {
 		line-height: 1.75em;
 	}
 	.gallery {
-		
+
 		margin-top: 4em;
 		padding-bottom: -4em;
 	  }
@@ -2045,7 +2045,7 @@ ol.default li {
 	}
 	.dropotron li:hover {
 		background: rgba(10, 10, 10, 0.04);
-		
+
 	}
 	.dropotron li {
 		padding: 0.25em 0 0.25em 0;

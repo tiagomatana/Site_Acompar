@@ -13,8 +13,8 @@
 */
 .gallery {
   position: relative;
-  height: 35em;
-  
+  height: auto;
+
 }
 .gallery .item {
   width: 100%;
@@ -26,8 +26,8 @@
 }
 .gallery .item img{
   width: 100%;
-  height: 35em;
-  
+  height: 100%;
+
 }
 .gallery .controls {
   position: absolute;
