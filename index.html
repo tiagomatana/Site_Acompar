@@ -26,18 +26,20 @@
 
     <md-toolbar style="background-color:#fff;color:#000;height:3.5em;" md-whiteframe="6dp" class="toolbar">
       <div class="md-toolbar-tools" layout-align="start center" layout="row" layout-xs="column">
-        <span flex></span>
+        <span flex="10"></span>
         <img src="images/logo.svg" alt="" style="padding: 0;margin: 0;width:8em;float:left;" />
         <span flex></span>
         <nav id="nav">
           <ul>
             <li>
               <a href="#" style="color:#3495CF;">Institui&ccedil;&atilde;o</a>
-              <ul class="" style="user-select: none; display: none; position: absolute;background-color:#fff">
-                <li style="white-space: nowrap;"><a href="#atendimentos" style="display: block;">Atendimentos</a></li>
+              <!-- <ul class="" style="user-select: none; display: none; position: absolute;background-color:#fff">
+                <li style="white-space: nowrap;"><a href="#atendimentos" style="display: block;">História</a></li>
                 <li style="white-space: nowrap;"><a href="#parceiros" style="display: block;">Parceiros</a></li>
-              </ul>
+              </ul> -->
             </li>
+            <li style="white-space: nowrap;"><a href="#atendimentos" style="color:#3495CF;">Atendimentos</a></li>
+            <li style="white-space: nowrap;"><a href="#parceiros" style="color:#3495CF;">Parceiros</a></li>
             <li>
               <md-button class="btn-apoiar" style="background-color:#46cece" ng-click="showPrompt($event)">
                 <!-- <a class="btn-apoiar sucess" style="color:#fff;padding-right:15px;padding-left:15px;padding-top:10px;padding-bottom:10px;border-radius:7px;" layout-align="center center">

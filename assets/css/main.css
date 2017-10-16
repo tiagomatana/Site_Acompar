@@ -1867,12 +1867,12 @@ ol.default li {
 	}
 	.gallery {
 
-		margin-top: 4em;
+		/* margin-top: 4em; */
 		padding-bottom: -4em;
 	  }
 
 	.toolbar{
-		position:fixed;
+		position:flex;
 	}
 	h2 {
 		font-size: 1.5em;
