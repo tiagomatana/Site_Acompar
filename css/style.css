@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -23,9 +23,13 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+figure {
+  background-color: #3495CF;
+}
 
-Main Components 
+/* --------------------------------
+
+Main Components
 
 -------------------------------- */
 .cd-horizontal-timeline {
