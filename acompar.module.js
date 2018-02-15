@@ -12,7 +12,7 @@
     .module('dialogDemo1', ['ngMaterial'])
     .controller('AppCtrl', function ($scope, $mdDialog, $http) {
       $scope.historico = false;
-      $scope.dialogNucleo = false;
+      $scope.dialogNucleo = true;
       $scope.depoimentos = false;
       $scope.eventos = [{
           dia: "15",
@@ -40,7 +40,7 @@
       $scope.sendEmail = function (ev) {
         var data= {'name': $scope.name,'email': $scope.email,'subject': $scope.subject,'message': $scope.message};
         $http.post(
-          "https://tiagomatana.com/acompar/email.php", 
+          "https://tiagomatana.com/acompar/email.php",
           data
         ).then(function (response) {
           $mdDialog.show(
@@ -125,12 +125,12 @@
         });
       };
 
-      $scope.showAdvanced = function (ev, nucleo) {
+      $scope.showAdvanced = function (ev, nucleo, page) {
         self.nucleo = nucleo;
 
         $mdDialog.show({
             controller: DialogController,
-            templateUrl: 'dialog1.tmpl.html',
+            templateUrl: page + '.tmpl.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose: true,
