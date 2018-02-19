@@ -167,6 +167,7 @@ Main Components
   border-color: #7b9d6f;
 }
 @media only screen and (min-width: 1100px) {
+  
   .cd-horizontal-timeline {
     margin: 6em auto;
   }
@@ -323,6 +324,7 @@ Main Components
   line-height: 1.6;
 }
 @media only screen and (min-width: 768px) {
+  
   .cd-horizontal-timeline .events-content h2 {
     font-size: 7rem;
   }
