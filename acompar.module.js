@@ -62,7 +62,7 @@
             .parent(angular.element(document.querySelector('#popupContainer')))
             .clickOutsideToClose(true)
             .title('ATENÇÃO')
-            .textContent(response.data)
+            .textContent("Não foi possível enviar o email.")
             .ariaLabel('Alert Dialog Demo')
             .ok('FECHAR')
             .targetEvent(ev)
