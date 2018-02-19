@@ -40,7 +40,7 @@
       $scope.sendEmail = function (ev) {
         var data= {'name': $scope.name,'email': $scope.email,'subject': $scope.subject,'message': $scope.message};
         $http.post(
-          "https://tiagomatana.com/acompar/email.php",
+          "https://acompar.org/home/email.php",
           data
         ).then(function (response) {
           $mdDialog.show(
