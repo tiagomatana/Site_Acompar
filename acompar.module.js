@@ -11,7 +11,7 @@
   angular
     .module('dialogDemo1', ['ngMaterial'])
     .controller('AppCtrl', function ($scope, $mdDialog, $http) {
-      $scope.historico = false;
+      $scope.historico = true;
       $scope.dialogNucleo = true;
       $scope.depoimentos = false;
       $scope.eventos = [{
