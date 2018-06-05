@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Landing - Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style>
+/* .mySlides {display:none;} */
+</style>
+		<script>
+		function includeHTML() {
+		  var z, i, elmnt, file, xhttp;
+		  /*loop through a collection of all HTML elements:*/
+		  z = document.getElementsByTagName("*");
+		  for (i = 0; i < z.length; i++) {
+		    elmnt = z[i];
+		    /*search for elements with a certain atrribute:*/
+		    file = elmnt.getAttribute("w3-include-html");
+		    if (file) {
+		      /*make an HTTP request using the attribute value as the file name:*/
+		      xhttp = new XMLHttpRequest();
+		      xhttp.onreadystatechange = function() {
+		        if (this.readyState == 4) {
+		          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+		          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+		          /*remove the attribute, and call this function once more:*/
+		          elmnt.removeAttribute("w3-include-html");
+		          includeHTML();
+		        }
+		      }
+		      xhttp.open("GET", file, true);
+		      xhttp.send();
+		      /*exit the function:*/
+		      return;
+		    }
+		  }
+		};
+		</script>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<!-- <a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a> -->
+					<a href="index.html" class="logo"><img src="images/logo_xb.png" class="logomarca" alt=""></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Início</a></li>
+							<li><a href="historia.html">História</a></li>
+							<li><a href="">Atendimentos</a></li>
+							<!-- <li><a href="elements.html">Elements</a></li> -->
+						</ul>
+						<!-- <ul class="actions vertical">
+							<li><a href="#" class="button special fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul> -->
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<span class="image">
+								<img src="images/banner2.jpg" class="mySlides" alt="" />
+							</span>
+							<header class="major">
+								<h1>História</h1>
+							</header>
+							<div class="legenda">
+								<p>Veja a trajetória de sucesso e conquistas da ACOMPAR</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+						<div w3-include-html="timeline.html"></div>
+
+
+
+
+					</div>
+
+					<!-- Footer -->
+						<footer id="footer">
+							<div class="inner">
+								<ul class="icons">
+									<!-- <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+									<li><a href="https://www.facebook.com/Acompar" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon alt fa-whatsapp"><span class="label">Instagram</span></a></li>
+									<!-- <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li> -->
+									<!-- <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
+								</ul>
+								<ul class="copyright">
+									<li>&copy; ACOMPAR</li><li>Design: <a href="https://tiagomatana.com">Tiago Matana</a></li>
+								</ul>
+							</div>
+						</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+			<script>
+includeHTML();
+</script>
+<script type="text/javascript">
+var myIndex = 0;
+carousel();
+function carousel() {
+	var fotos = ["images/banner.jpg", "images/banner2.jpg"];
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	console.log(x);
+	// for (i = 0; i < x.length; i++) {
+	// 	 x[i].style.display = "none";
+	// }
+	myIndex++;
+	if (myIndex > fotos.length) {myIndex = 1}
+	// x[myIndex-1].style.display = "inline-block";
+	x.src = fotos[myIndex-1];
+	setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+	</body>
+</html>

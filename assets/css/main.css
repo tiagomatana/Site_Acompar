@@ -47,6 +47,10 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
+	/* Logo */
+	.logomarca{
+		width: 9.5em;
+	}
 
 /* Box Model */
 
@@ -2995,7 +2999,7 @@
 					width: 100%;
 				}
 
-			.spotlights > section > .content {
+			.spotlights > section > .legenda {
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -3016,7 +3020,7 @@
 				width: 70%;
 			}
 
-				.spotlights > section > .content > .inner {
+				.spotlights > section > .legenda > .inner {
 					margin: 0 auto;
 					max-width: 100%;
 					width: 65em;
@@ -3030,7 +3034,7 @@
 				background-color: #333856;
 			}
 
-				.spotlights > section:nth-child(2n) > .content {
+				.spotlights > section:nth-child(2n) > .legenda {
 					-moz-align-items: -moz-flex-end;
 					-webkit-align-items: -webkit-flex-end;
 					-ms-align-items: -ms-flex-end;
@@ -3043,7 +3047,7 @@
 				width: 40%;
 			}
 
-			.spotlights > section > .content {
+			.spotlights > section > .legenda {
 				width: 60%;
 			}
 
@@ -3055,7 +3059,7 @@
 				width: 45%;
 			}
 
-			.spotlights > section > .content {
+			.spotlights > section > .legenda {
 				width: 55%;
 			}
 
@@ -3071,7 +3075,7 @@
 					width: 100%;
 				}
 
-				.spotlights > section > .content {
+				.spotlights > section > .legenda {
 					padding: 4em 3em 2em 3em ;
 					width: 100%;
 				}
@@ -3080,7 +3084,7 @@
 
 		@media screen and (max-width: 736px) {
 
-			.spotlights > section > .content {
+			.spotlights > section > .legenda {
 				padding: 3em 1.5em 1em 1.5em ;
 			}
 
@@ -3482,7 +3486,7 @@
 						max-width: 100%;
 					}
 
-			#banner > .inner .content {
+			#banner > .inner .legenda {
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -3494,16 +3498,16 @@
 				margin: 0 0 2em 0;
 			}
 
-				#banner > .inner .content > * {
+				#banner > .inner .legenda > * {
 					margin-left: 1.5em;
 					margin-bottom: 0;
 				}
 
-				#banner > .inner .content > :first-child {
+				#banner > .inner .legenda > :first-child {
 					margin-left: 0;
 				}
 
-				#banner > .inner .content p {
+				#banner > .inner .legenda p {
 					font-size: 0.7em;
 					font-weight: 600;
 					letter-spacing: 0.25em;
@@ -3583,11 +3587,11 @@
 					font-size: 2em;
 				}
 
-				#banner > .inner .content {
+				#banner > .inner .legenda {
 					display: block;
 				}
 
-					#banner > .inner .content > * {
+					#banner > .inner .legenda > * {
 						margin-left: 0;
 						margin-bottom: 2em;
 					}
@@ -3606,7 +3610,7 @@
 				padding: 6em 0 2em 0 ;
 			}
 
-				#banner > .inner .content p br {
+				#banner > .inner .legenda p br {
 					display: none;
 				}
 
