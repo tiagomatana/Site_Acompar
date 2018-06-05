@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt" ng-app="dialogDemo1" ng-cloak>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>ACOMPAR</title>
+  <!-- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="shortcut  icon" href="images/icon.png" type="image/ico">
+  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+  <link rel="stylesheet" href="assets/css/gallery.theme.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="homepage" ng-controller="AppCtrl" style="background-color: #fff">
+
+  <md-content>
+
+    <md-toolbar style="background-color:#f9f9f9;color:#000;height:3.5em;"class="toolbar md-whiteframe-glow-z1">
+      <div class="md-toolbar-tools" layout-align="start center" layout="row" layout-xs="column" layout-sm="column">
+        <span flex="10"></span>
+        <img src="images/logo.svg" alt="" style="padding: 0;margin: 0;width:8em;float:left;" />
+        <span flex></span>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="#intro" style="color:#3495CF;">Institui&ccedil;&atilde;o</a>
+              <!-- <ul class="" style="user-select: none; display: none; position: absolute;background-color:#fff">
+                <li style="white-space: nowrap;"><a href="#atendimentos" style="display: block;">História</a></li>
+                <li style="white-space: nowrap;"><a href="#parceiros" style="display: block;">Parceiros</a></li>
+              </ul> -->
+            </li>
+            <li style="white-space: nowrap;"><a href="#atendimentos" style="color:#3495CF;">Atendimentos</a></li>
+            <li style="white-space: nowrap;"><a href="#contato" style="color:#3495CF;">Contato</a></li>
+            <li>
+              <!-- <a class="btn-apoiar sucess" style="color:#fff;padding-right:15px;padding-left:15px;padding-top:10px;padding-bottom:10px;border-radius:7px;" layout-align="center center">
+            </a> -->
+              <!-- <md-button class="btn-apoiar" style="background-color:#46cece" ng-click="showPrompt($event)">
+                <a href="">
+                  <md-icon md-svg-src="img/favorite.svg" aria-label="favorite"></md-icon>
+                  <span style="color:#fff;font-weight:bold">Quero Apoiar</span></a>
+              </md-button> -->
+            </li>
+          </ul>
+        </nav>
+        <span flex="5"></span>
+        <!-- <div layout="column" hide show-gt-sm>
+          <span layout="column" class="md-caption" layout-align="space-between start" layout-fill style="width:23em;font-family: Helvetica, Arial, sans-serif;">
+          <div style="padding: 0px;height: 20px;">contato@acompar.org</div>
+
+          <div style="padding: 0px;height: 20px;"> (51)3367-2986 </div>
+        </span>
+
+
+        </div> -->
+      </div>
+    </md-toolbar>
+  </md-content>
+<md-divider inset style="border-color:#ddd"></md-divider>
+
+
+  <div id="page-wrapper" flex style="margin-top:50px">
+    <div class="gallery autoplay items-5">
+      <!-- <div id="item-1" class="control-operator"></div>
+      <div id="item-2" class="control-operator"></div>
+      <div id="item-3" class="control-operator"></div>
+      <div id="item-4" class="control-operator"></div>
+      <div id="item-5" class="control-operator"></div> -->
+
+
+
+
+      <figure class="item">
+        <img src="images/n2/img03.jpg" alt="">
+      </figure>
+
+      <figure class="item">
+        <img src="images/n3/img01.jpg" alt="">
+      </figure>
+
+      <figure class="item">
+        <img src="images/n4/img03.jpg" alt="">
+      </figure>
+
+      <figure class="item">
+        <img src="images/n5/img03.jpg" alt="">
+      </figure>
+
+      <figure class="item">
+        <img src="images/n6/img01.jpg" alt="">
+      </figure>
+
+<!--
+      <div class="controls">
+        <a href="#item-1" class="control-button">&bull;</a>
+        <a href="#item-2" class="control-button">&bull;</a>
+        <a href="#item-3" class="control-button">&bull;</a>
+        <a href="#item-4" class="control-button">&bull;</a>
+        <a href="#item-5" class="control-button">&bull;</a>
+      </div> -->
+    </div>
+    <!-- Header -->
+    <div id="header-wrapper" style="text-align: center;padding: 0;margin: 0;">
+      <!-- <div id="header" style="text-align: center;padding: 0;margin: 0;"> -->
+      <!-- <img src="images/logo.svg"  alt="" style="padding: 0;margin: 0;width:80%;height:auto;"/> -->
+      <!-- </div> -->
+
+
+
+
+      <!-- Banner -->
+      <!-- <section id="banner">
+		  <header>
+			<h2></h2>
+		  </header>
+
+		</section> -->
+
+      <!-- Intro -->
+      <br>
+      <section id="intro" class="container">
+        <header class="major">
+          <h2>Quem somos?</h2>
+        </header>
+        <div class="row">
+          <div class="4u 12u(mobile)">
+            <section class="first">
+              <header>
+                <h2>Miss&atilde;o</h2>
+              </header>
+              <p>Desenvolver um trabalho com as fam&iacute;lias em situa&ccedil;&atilde;o de vulnerabilidade
+                social atrav&eacute;s dos servi&ccedil;os e projetos oferecidos pela institui&ccedil;&atilde;o.</p>
+            </section>
+          </div>
+          <div class="4u 12u(mobile)">
+            <section class="middle">
+              <img src="images/50.png" width="240em" alt="" style="margin-top:-5em;margin-bottom:-5em;"/>
+            </section>
+          </div>
+          <div class="4u 12u(mobile)">
+            <section class="last">
+              <header>
+                <h2>Vis&atilde;o</h2>
+              </header>
+              <p>A ACOMPAR sendo reconhecida como excel&ecirc;ncia enquanto transformadora da realidade social.</p>
+              <!-- <header>
+                <h2>Valores</h2>
+              </header>
+              <p>Valores.</p> -->
+            </section>
+          </div>
+        </div>
+        <br>
+        <header class="major">
+          <h2>Nossos valores</h2>
+        </header>
+        <div class="row">
+          <div class="4u 12u(mobile)">
+            <section class="first">
+              <header>
+                <h2>Princípio ético</h2>
+              </header>
+              <p>Que os educandos sejam autônomos e responsáveis saibam ser solidários através do diagnóstico de suas realidades e aprendam
+              a respeitar o que é de todos (o bem comum).</p>
+
+            </section>
+          </div>
+          <div class="4u 12u(mobile)">
+            <section class="middle">
+              <header>
+                <h2>Princípio estético</h2>
+              </header>
+              <p>Que os educandos sejam fortes, porém sensíveis, que saibam usar de toda a sua criatividade e diversidade para manifestar
+              as mais variadas formas de arte e cultura.</p>
+            </section>
+          </div>
+          <div class="4u 12u(mobile)">
+            <section class="last">
+              <header>
+                <h2>Princípio político</h2>
+              </header>
+              <p>Que os educandos reconheçam os seus direitos, mas que acima de tudo também obedeçam aos seus deveres, que sejam críticos
+              e lutem por um país verdadeiramente democrático.</p>
+            </section>
+          </div>
+        </div>
+        <section class="container" flex>
+          <header class="major">
+            <h2>Proposta Pedag&oacute;gica</h2></header>
+          <div class="row" layout-sm="column" layout-align="center center">
+            <div class="3u 12u(mobile)" layout-align="center center" flex>
+
+              <img src="images/logo_novo.svg" width="180" alt="" />
+
+            </div>
+
+            <div class="9u 12u(mobile)" style="text-align: justify;" flex>
+
+              <p> A ACOMPAR baseia sua proposta pedag&oacute;gica numa postura s&oacute;cio-interacionista, respaldando-se em princ&iacute;pios de coopera&ccedil;&atilde;o, solidariedade e respeito &agrave;s diferen&ccedil;as. Atrav&eacute;s de um ambiente
+                desafiador, pretende favorecer o desenvolvimento integral do indiv&iacute;duo, considerando-o em suas dimens&otilde;es f&iacute;sica, afetiva, cognitiva e social. </p>
+              <p>Dentro desta concep&ccedil;&atilde;o, visa contribuir para a constru&ccedil;&atilde;o da auto-estima e da identidade individual e de grupo, bem como, para a forma&ccedil;&atilde;o de sujeitos aut&ocirc;nomos e cr&iacute;ticos, capazes do
+                exerc&iacute;cio pleno da cidadania. </p>
+              <p>Com atividades propostas no sentido de estimular a criatividade e capacidade de resolu&ccedil;&atilde;o de situa&ccedil;&otilde;es-problemas, objetiva qualificar as situa&ccedil;&otilde;es de intera&ccedil;&atilde;o dos sujeitos com o meio
+                e dos sujeitos entre si, envolvendo ativamente educadores, educandos e familiares. </p>
+
+            </div>
+          </div>
+        </section>
+
+      </section>
+      <section id="historia" class="container" ng-if="historico">
+        <header class="major">
+          <h2>Hist&oacute;ria da Institui&ccedil;&atilde;o</h2>
+        </header>
+        <div ng-include src="'timeline.html'" style="text-align:left"></div>
+      </section>
+
+    </div>
+
+    <!-- Main -->
+    <div id="main-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="12u">
+
+            <!-- Portfolio -->
+            <section id="atendimentos">
+              <header class="major">
+                <h2>Educa&ccedil;&atilde;o Infantil</h2>
+                <p>Atendimento para crian&ccedil;as de 4 meses at&eacute; 6 anos de idade.</p>
+              </header>
+              <div class="row">
+                <div class="4u 12u(mobile)">
+                  <section class="box md-whiteframe-10dp">
+                    <a href="#atendimentos" class="image featured"><img src="images/n2/img01.jpg" alt="" /></a>
+                    <header>
+                      <h3>N&uacute;cleo II</h3>
+                    </header>
+                    <p>Av. Caldeia, 210.<br> (51)3367-2722 / (51)98608-6399 <br> E-mail: nucleo2@acompar.org</p>
+                    <footer hide show-gt-sm flex ng-if="dialogNucleo">
+                      <a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo II','page2')">Mais informa&ccedil;&otilde;es</a>
+                    </footer>
+                  </section>
+                </div>
+                <div class="4u 12u(mobile)">
+                  <section class="box md-whiteframe-10dp">
+                    <a href="#atendimentos" class="image featured"><img src="images/n3/img03.jpg" alt="" /></a>
+                    <header>
+                      <h3>N&uacute;cleo III</h3>
+                    </header>
+                    <p>Rua Jo&atilde;o Paris, 1107.<br> (51)3367-3098 / (51)98608-6400 <br> E-mail: nucleo3@acompar.org</p>
+                    <footer hide show-gt-sm flex ng-if="dialogNucleo">
+                      <a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo III','page3')">Mais informa&ccedil;&otilde;es</a>
+                    </footer>
+                  </section>
+                </div>
+                <div class="4u 12u(mobile)">
+                  <section class="box md-whiteframe-10dp">
+                    <a href="#atendimentos" class="image featured"><img src="images/n5/img02.jpg" alt="" /></a>
+                    <header>
+                      <h3>N&uacute;cleo V</h3>
+                    </header>
+                    <p>Rua Dr. Meer M&aacute;rio Kaufmann, 37<br> (51)3367-0045 / (51)99802-8041<br> E-mail: nucleo5@acompar.org
+                    </p>
+                    <footer hide show-gt-sm flex ng-if="dialogNucleo">
+                      <a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo V','page5')">Mais informa&ccedil;&otilde;es</a>
+                    </footer>
+                  </section>
+                </div>
+              </div>
+            </section>
+            <section>
+              <header class="major">
+                <h2>Desenvolvimento Comunit&aacute;rio</h2>
+              </header>
+              <div class="row">
+                <div class="4u 12u(mobile)">
+                  <section class="box md-whiteframe-10dp">
+                    <a href="#atendimentos" class="image featured"><img src="images/n4/img03.jpg" alt="" /></a>
+                    <header>
+                      <h3>N&uacute;cleo IV</h3>
+                    </header>
+                    <p>Rua Rosa Maria Malheiros, 27.<br> (51)3387-7745 / (51)98608-6401<br> E-mail: nucleo4@acompar.org</p>
+                    <footer hide show-gt-sm flex ng-if="dialogNucleo">
+                      <a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo IV','page4')">Mais informa&ccedil;&otilde;es</a>
+                    </footer>
+                  </section>
+                </div>
+                <div class="4u 12u(mobile)">
+                  <section class="box md-whiteframe-10dp">
+                    <a href="#atendimentos" class="image featured"><img src="images/n6/img03.jpg" alt="" /></a>
+                    <header>
+                      <h3>N&uacute;cleo VI</h3>
+                    </header>
+                    <p>Av. Bernadino de Oliveira Paim, 136<br> (51)3367-5442 / (51)98608-6405<br> E-mail: nucleo6@acompar.org</p>
+                    <footer hide show-gt-sm flex ng-if="dialogNucleo">
+                      <a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Núcleo VI','page4')">Mais informa&ccedil;&otilde;es</a>
+                    </footer>
+                  </section>
+                </div>
+                <div class="4u 12u(mobile)">
+                  <section class="box md-whiteframe-10dp">
+                    <a href="#" class="image featured"><img src="images/n4/img01.jpg" alt="" /></a>
+                    <header>
+                      <h3>A&ccedil;&atilde;o Rua</h3>
+                    </header>
+                    <p>Rua Rosa Maria Malheiros, 27.<br> (51)3387-4872 / (51)98608-6394<br> E-mail: acaorua@acompar.org</p>
+                    <footer hide show-gt-sm flex ng-if="dialogNucleo">
+                      <a href="" class="button alt sucess" id="btnInfo" ng-click="showAdvanced($event,'Ação Rua','page4')">Mais informa&ccedil;&otilde;es</a>
+                    </footer>
+                  </section>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="12u">
+
+            <!-- Blog -->
+            <section id="depoimentos" ng-if="depoimentos">
+              <header class="major">
+                <h2>Depoimentos</h2>
+              </header>
+              <div class="row">
+
+                <div class="6u 12u(mobile)">
+                  <section class="box md-whiteframe-10dp">
+                    <a href="" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+                    <header>
+                      <h3>T&iacute;tulo</h3>
+                      <p>Dados da pessoa</p>
+                    </header>
+                    <p>Depoimento sobre o que significa a ACOMPAR na sua vida.</p>
+                    <footer>
+                      <!--<ul class="actions">
+								<li><a href="#" class="button icon fa-file-text">Continue Reading</a></li>
+								<li><a href="#" class="button alt icon fa-comment">33 comments</a></li>
+							  </ul>-->
+                    </footer>
+                  </section>
+                </div>
+
+                <div class="6u 12u(mobile)">
+                  <section class="box md-whiteframe-10dp">
+                    <a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+                    <header>
+                      <h3>T&iacute;tulo</h3>
+                      <p>Dados da pessoa</p>
+                    </header>
+                    <p>Depoimento sobre o que significa a ACOMPAR na sua vida.</p>
+                    <footer>
+                      <!--<ul class="actions">
+								  <li><a href="#" class="button icon fa-file-text">Continue Reading</a></li>
+								  <li><a href="#" class="button alt icon fa-comment">33 comments</a></li>
+								</ul>-->
+                    </footer>
+                  </section>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-wrapper">
+      <section id="contato" class="container">
+        <!-- <div class="row">
+          <div class="6u 12u(mobile)">
+            <section>
+              <header style="text-align: center">
+                <h2>Eventos da ACOMPAR</h2>
+              </header>
+              <ul class="dates">
+                <li ng-repeat="e in eventos">
+                  <span class="date">{{e.mes}} <strong>{{e.dia}}</strong></span>
+                  <h3><a href="#">{{e.title}}</a></h3>
+                  <p>{{e.detail}}</p>
+                </li>
+
+
+              </ul>
+            </section>
+          </div>
+          <div class="6u 12u(mobile)">
+            <section layout-align="center center" layout="column">
+              <header style="text-align: center">
+                <h2>V&iacute;deo Institucional</h2>
+              </header>
+              <a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+
+              <p>
+                Frase motivadora aliada ao trabalho realizado pela ACOMPAR.
+              </p>
+              <footer>
+
+              </footer>
+            </section>
+          </div>
+        </div> -->
+        <header style="text-align: center">
+          <h2>Entre em Contato!</h2>
+        </header>
+        <div class="row">
+          <div class="6u 12u(mobile)">
+            <section id="contato" style="padding-top: 20px">
+              <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="nome" ng-model="name" required="true" />
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" ng-model="email" />
+                <label for="name">Assunto:</label>
+                <input type="text" id="subject" name="subject" ng-model="subject" required="true" />
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" ng-model="message"></textarea>
+                <br>
+                <input type="button" class="sucess" value="Enviar" ng-click="sendEmail($event)" />
+                <input type="reset" class="cancel" value="Cancelar" />
+              </form>
+            </section>
+          </div>
+
+          <div class="6u 12u(mobile)">
+            <section style="padding-top: 20px">
+              <div ng-if="links">
+                <header style="text-align: center">
+                  <h2>Links &Uacute;teis</h2>
+                </header>
+                <ul class="social">
+                  <li><a class="icon fa-facebook" href="http://facebook.com/Acompar"><span class="label">Facebook</span></a></li>
+                  <!-- <li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+              <li><a class="icon fa-twitter" href="#"><span class="label">Dribbble</span></a></li>
+  						<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
+  						<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li> -->
+
+                </ul>
+              </div>
+              <ul class="contact">
+                <li>
+                  <h3>Endere&ccedil;o</h3>
+                  <p>
+                    Av. Bernadino de Oliveira Paim, 136<br /> Bairro Santa Rosa de Lima<br /> Porto Alegre - RS
+                  </p>
+                </li>
+                <li>
+                  <h3>Contatos</h3>
+                  <p>contato@acompar.org | (051) 3367-2986</p>
+                </li>
+
+                <li>
+                  <h3 hide show-gt-sm>P&aacute;gina</h3>
+                  <iframe hide show-gt-sm src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAcompar&width=400&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1541477552560430" height="250"
+                    style="border:none;overflow:hidden;width:500px" scrolling="no" frameborder="0" allowTransparency="true" flex></iframe>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="column">
+          <div class="12u">
+
+            <!-- Copyright -->
+            <div id="copyright">
+              <ul class="links">
+                <li>&copy; ACOMPAR, CNPJ: 92925726/0001-53.</li>
+                <li>Todos os direitos reservados</li>
+                <li>Developer: <a href="https://tiagomatana.com" style="text-decoration:none;color:#fff;font-weight:bold;">Tiago Matana Development</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/skel-viewport.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="assets/js/main.js"></script>
+
+
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+
+  <!-- Angular Material Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+  <script type="text/javascript" src="acompar.module.js"></script>
+
+
+</body>
+
+</html>
