@@ -3454,7 +3454,8 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		animation: cambiar 10s infinite;
+		animation-delay: 2s;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3572,7 +3573,7 @@
 		}
 
 		#banner.style2:after {
-			background-color: #826EB2;
+			background-color: #2A344A;
 		}
 
 		#banner.style3:after {
@@ -4032,4 +4033,13 @@
 			transform: none;
 			opacity: 1;
 			visibility: visible;
+		}
+
+		@keyframes cambiar {
+			0%{background-image: url("../../images/banner.jpg");}
+			33%{background-image: url("../../images/banner2.jpg");}
+			66%{background-image: url("../../images/banner3.jpg");}
+			100%{background-image: url("../../images/banner.jpg");}
+
+
 		}
