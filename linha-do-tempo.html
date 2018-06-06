@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<style>
+		/* .mySlides {display:none;} */
+	</style>
 	<script src="assets/js/include.js"></script>
 </head>
 
@@ -33,113 +36,38 @@
 
 		<!-- Menu -->
 		<nav id="menu">
-			<div w3-include-html="menu.html"></div>
+			<ul class="links">
+				<li><a href="index.html">Início</a></li>
+				<li><a href="historia.html">História</a></li>
+				<li><a href="linha-do-tempo.html">Linha do tempo</a></li>
+				<li><a href="">Atendimentos</a></li>
+				<!-- <li><a href="elements.html">Elements</a></li> -->
+			</ul>
+			<!-- <ul class="actions vertical">
+							<li><a href="#" class="button special fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul> -->
 		</nav>
 
 		<!-- Banner -->
-		<!-- <div class="homepage-hero-module">
-			<div class="video-container">
-				<div class="filter"></div>
-				<video autoplay loop class="fillWidth" id="videoBanner">
-            <source src="acompar.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
-				<div class="poster hidden">
-					<img src="PATH_TO_JPEG" alt="">
-				</div>
-			</div>
-		</div> -->
+		<!-- Note: The "styleN" class below should match that of the header element. -->
 		<section id="banner" class="major">
 			<div class="inner">
+				<span class="image">
+								<img src="images/banner2.jpg" class="mySlides" alt="" />
+							</span>
 				<header class="major">
-					<h1>Valorizar a vida em harmonia.</h1>
+					<h1>História</h1>
 				</header>
 				<div class="legenda">
-					<p>Conheça um pouco mais sobre a organização</p>
-					<ul class="actions">
-						<li><a href="#one" class="button next scrolly">Vamos lá</a></li>
-					</ul>
+					<p>Veja a trajetória de sucesso e conquistas da ACOMPAR</p>
 				</div>
 			</div>
 		</section>
 
 		<!-- Main -->
 		<div id="main">
-
-			<!-- One -->
-			<section id="one" class="tiles">
-				<article>
-					<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-					<header class="major">
-						<h3>Missão</h3>
-						<p>Desenvolver um trabalho com as famílias em situação de vulnerabilidade social através dos serviços e projetos oferecidos pela instituição.</p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-					<header class="major">
-						<h3>Visão</h3>
-						<p>A ACOMPAR sendo reconhecida como excelência enquanto transformadora da realidade social.</p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-					<header class="major">
-						<h3>Nossos valores</h3>
-						<p></p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-					<header class="major">
-						<h3>Princípio ético</h3>
-						<p>Que os educandos sejam autônomos e responsáveis saibam ser solidários através do diagnóstico de suas realidades e aprendam a respeitar o que é de todos.</p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-					<header class="major">
-						<h3>Princípio estético</h3>
-						<p>Que os educandos sejam fortes, porém sensíveis, que saibam usar de toda a sua criatividade e diversidade para manifestar as mais variadas formas de arte e cultura.</p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-					<header class="major">
-						<h3>Princípio político</h3>
-						<p>Que os educandos reconheçam os seus direitos, mas que acima de tudo também obedeçam aos seus deveres, que sejam críticos e lutem por um país verdadeiramente democrático.</p>
-					</header>
-				</article>
-			</section>
-
-			<!-- Two -->
-			<section id="two">
-				<div class="inner">
-					<header class="major">
-						<h2>Proposta Pedagógica</h2>
-					</header>
-					<p>
-						A ACOMPAR fundamenta sua proposta pedagógica na postura sociointeracionista, respaldando-se nos princípios de cooperação, solidariedade e respeito às diferenças. Através de um ambiente desafiador, pretende favorecer o desenvolvimento integral do indivíduo,
-						considerando-o em suas dimensões física, afetiva, cognitiva e social. Dentro desta concepção, visa contribuir para a construção da autoestima, da identidade individual e de grupo, bem como para a formação de sujeitos autônomos e críticos, capazes
-						do exercício pleno da cidadania.
-					</p>
-					<!-- <ul class="actions">
-										<li><a href="" class="button next">Get Started</a></li>
-									</ul> -->
-				</div>
-			</section>
-
+			<div w3-include-html="timeline.html"></div>
 		</div>
 
 		<!-- Contact -->
@@ -220,11 +148,12 @@
 	<script src="assets/js/util.js"></script>
 	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/video.js"></script>
+	<script src="assets/js/carousel.js"></script>
 
 	<script>
 		includeHTML();
 	</script>
+
 
 </body>
 
