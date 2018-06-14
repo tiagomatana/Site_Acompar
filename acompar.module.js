@@ -14,19 +14,11 @@
 
       var self = this;
 
-      self.$onInit = onInit;
-
-      function onInit() {
-        alert('teset');
-      }
-
       function clearEmail(){
         $scope.name = '';
         $scope.email = '';
         $scope.message = '';
       }
-
-
 
       $scope.sendEmail = function (ev) {
         var data= {'name': $scope.name,'email': $scope.email,'subject': '[SITE]','message': $scope.message};
