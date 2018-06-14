@@ -1,0 +1,22 @@
+{
+  "name": "site_acompar",
+  "version": "1.0.0",
+  "description": "Instituição na comunidade da Santa Rosa de Lima",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagomatana/Site_Acompar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiagomatana/Site_Acompar/issues"
+  },
+  "homepage": "https://github.com/tiagomatana/Site_Acompar#readme",
+  "dependencies": {
+    "angular": "^1.7.2"
+  }
+}

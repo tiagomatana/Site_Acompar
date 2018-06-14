@@ -8,11 +8,12 @@ $dataJsonDecode = json_decode($data);
 
 $name = $dataJsonDecode->name;
 $from = $dataJsonDecode->email;
-$subject = $dataJsonDecode->subject;
+$subject = "[SITE]";
+// $subject = $dataJsonDecode->subject;
 $message = $dataJsonDecode->message;
 
-$to = "tiago.matana@gmail.com";
-// $to = "contato@acompar.org";
+// $to = "tiago.matana@gmail.com";
+$to = "contato@acompar.org";
 
 if(!empty($name) && !empty($from) && !empty($subject) && !empty($message)){
     $headers = 'From: '.$from. "\r\n" .
