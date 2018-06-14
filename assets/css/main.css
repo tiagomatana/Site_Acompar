@@ -3455,7 +3455,7 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		animation: cambiar 10s infinite;
+		animation: cambiar 15s infinite;
 		animation-delay: 2s;
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -4037,12 +4037,13 @@
 		}
 
 		@keyframes cambiar {
-			0%{background-image: url("../../images/banner.jpg");}
-			20%{background-image: url("../../images/banner2.jpg");}
-			40%{background-image: url("../../images/banner3.jpg");}
-			60%{background-image: url("../../images/banner4.jpg");}
-			80%{background-image: url("../../images/banner5.jpg");}
-			100%{background-image: url("../../images/banner.jpg");}
+			0%, 100%{background-image: url("../../images/banner00.jpg");}
+			17%{background-image: url("../../images/banner.jpg");}
+			34%{background-image: url("../../images/banner2.jpg");}
+			51%{background-image: url("../../images/banner3.jpg");}
+			68%{background-image: url("../../images/banner4.jpg");}
+			85%{background-image: url("../../images/banner5.jpg");}
+			/*100%{background-image: url("../../images/banner00.jpg");}*/
 
 
 		}
