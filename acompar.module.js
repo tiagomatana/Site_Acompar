@@ -20,10 +20,14 @@
         $scope.message = '';
       }
 
+
       $scope.sendEmail = function (ev) {
+        var host = window.location.href;
+        var rest = "email.php";
+        var hostname = host.concat(rest);
         var data= {'name': $scope.name,'email': $scope.email,'subject': '[SITE]','message': $scope.message};
         $http.post(
-          "http://acompar.online/home/email.php",
+          hostname,
           data
         ).then(function (response) {
           if(response.data === "Email enviado com sucesso."){
