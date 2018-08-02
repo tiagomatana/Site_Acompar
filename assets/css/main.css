@@ -3910,7 +3910,7 @@
 			overflow: auto;
 			text-align: center;
 			visibility: hidden;
-			width: 18em;
+			/*width: 18em;*/
 		}
 
 			#menu .inner > :first-child {

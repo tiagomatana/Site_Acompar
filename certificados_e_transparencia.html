@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<!--
+    Forty by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html ng-app="acomparjs"  ng-cloak>
+
+<head>
+    <title>ACOMPAR</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="shortcut  icon" href="images/icon.png" type="image/ico">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <script src="assets/js/include.js"></script>
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+       <!-- Header -->
+		<header id="header">
+			<!-- <a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a> -->
+			<a href="index.html" class="logo">
+				<img src="images/logo_xb.png" class="logomarca" alt="">
+			</a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+        <!-- Menu -->
+        <nav id="menu">
+            <div w3-include-html="menu.html"></div>
+        </nav>
+
+
+        				<!-- Main -->
+        					<div id="main" class="alt">
+
+        						<!-- One -->
+        							<section id="one">
+        								<div class="inner">
+        									<header class="major">
+        										<h1>Certificados e Transparência</h1>
+        									</header>
+
+                          <h2>Transparência</h2>
+        									<!-- Content -->
+        										<p>A ACOMPAR preza por sua transparência e prestação de contas com a comunidade, para que o exercício de suas atividades seja de qualidade e com responsabilidade.</p>
+                            <h2>Certificados</h2>
+        										<div class="row">
+        											<!-- Break -->
+        											<div class="4u 12u$(medium)">
+        												<h3>ATA DE ASSEMBLEIA GERAL DE DIRETORIA</h3>
+        												<p><ul class="actions">
+                                  <li><a href="./downloads/ATA_DE_ASSEMBLEIA_GERAL_DE_DIRETORIA.PDF" target="_blank" download="ATA DE ASSEMBLEIA GERAL DE DIRETORIA.PDF" class="button big icon fa-download">BAIXAR</a></li>
+                                </ul></p>
+        											</div>
+        											<div class="4u 12u$(medium)">
+        												<h3>ATESTADO DE FUNCIONAMENTO CMDCA</h3>
+        												<p><ul class="actions">
+                                  <li><a href="./downloads/ATESTADO_DE_FUNCIONAMENTO_CMDCA.PDF" target="_blank" download="ATESTADO DE FUNCIONAMENTO CMDCA.PDF" class="button big icon fa-download">BAIXAR</a></li>
+                                </ul></p>
+        											</div>
+        											<div class="4u 12u$(medium)">
+        												<h3>ATESTADO DE FUNCIONAMENTO CMAS</h3>
+        												<p><ul class="actions">
+                                  <li><a href="./downloads/ATESTADO_DE_FUNCIONAMENTO_CMAS.PDF" target="_blank" download="ATESTADO DE FUNCIONAMENTO CMAS.PDF" class="button big icon fa-download">BAIXAR</a></li>
+                                </ul></p>
+        											</div>
+        											<div class="4u 12u$(medium)">
+        												<h3>ESTATUTO SOCIAL</h3>
+        												<p><ul class="actions">
+                                  <li><a href="./downloads/ESTATUTO_SOCIAL.PDF" target="_blank" download="ESTATUTO SOCIAL.PDF" class="button big icon fa-download">BAIXAR</a></li>
+                                </ul></p>
+        											</div>
+
+        										</div>
+
+
+                        </div>
+
+        							</section>
+
+        					</div>
+
+        <!-- Contact -->
+    		<section id="contact" ng-controller="AppCtrl">
+    			<div class="inner">
+    				<section>
+    					<form method="post" action="#">
+    						<div class="field half first">
+    							<label for="name">Nome</label>
+    							<input type="text" name="name" id="name" ng-model="name"/>
+    						</div>
+    						<div class="field half">
+    							<label for="email">Email</label>
+    							<input type="text" name="email" id="email" ng-model="email"/>
+    						</div>
+    						<div class="field">
+    							<label for="message">Mensagem</label>
+    							<textarea name="message" id="message" rows="6" ng-model="message"></textarea>
+    						</div>
+    						<ul class="actions">
+    							<li><input type="button" value="Enviar" class="special" ng-click="sendEmail($event)" /></li>
+    							<li><input type="reset" value="Limpar" /></li>
+    						</ul>
+    					</form>
+    				</section>
+                <section class="split">
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon alt fa-envelope"></span>
+                            <h3>Email</h3>
+                            <a href="#">contato@acompar.org</a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon alt fa-phone"></span>
+                            <h3>Telefone</h3>
+                            <span>(051) 3367-2986</span>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="contact-method">
+                            <span class="icon alt fa-home"></span>
+                            <h3>Endereço</h3>
+                            <span>Av. Bernadino de Oliveira Paim, 136
+                                <br /> Bairro Santa Rosa de Lima
+                                <br /> Porto Alegre - RS</span>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <!-- <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+                    <li>
+                        <a href="https://www.facebook.com/Acompar" class="icon alt fa-facebook" target="_blank">
+                            <span class="label">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon alt fa-whatsapp">
+                            <span class="label">Instagram</span>
+                        </a>
+                    </li>
+                    <!-- <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li> -->
+                    <!-- <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; ACOMPAR</li>
+                    <li>Design:
+                        <a href="https://tiagomatana.com">Tiago Matana</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+    <script>
+        includeHTML();
+    </script>
+
+
+</body>
+
+</html>
